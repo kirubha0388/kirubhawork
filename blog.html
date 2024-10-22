@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <section class="about__header __blog">
+        <nav class="about__nav">
+            <div class="logo">
+                <div class="logo_menu">
+                    <img src="./assets/logo.png" alt="Peps" width="200" />
+                </div>
+                <div class="menu_icon">
+                    <i class="bi bi-list" style="color: #fff; font-size: 2em" onclick="show()"></i>
+                </div>
+            </div>
+            <ul id="navList">
+                <i class="bi bi-x" style="color: #fff; font-size: 2em; cursor: pointer;" onclick="hide()"></i>
+                <li class="nav-link"><a href="./index.html">Home
+                    </a>
+                </li>
+                <li class="nav-link"><a href="./about.html">About Us</a></li>
+                <li class="projects nav-link">
+                    <a class="main_project" id="projectsLink">Projects</a>
+                    <div class="projects_dropdown">
+                        <ul>
+                            <li><a href="">R&D Project</a></li>
+                            <li><a href="">Academic Project</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="service nav-link">
+                    <a class="main_service" id="serviceLink">Services</a>
+                    <div class="services_dropdown">
+                        <ul>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Trainings</a></li>
+                            <li><a href="">Resume Building</a></li>
+                            <li><a href="">Internship</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="blog nav-link">
+                    <a href="#" class="selected">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="about__head">
+            <h1>Blog</h1>
+        </section>
+    </section>
+    <section class="blog__section" data-aos="fade-up">
+        <section class="blog_post">
+            <h2>Controller Area Network - Transport Protocol (CAN TP) :</h2>
+            <h3>Navigating Efficient Data Transfer in EMB.SYS</h3>
+            <section class="img_1"></section>
+            <p>In the intricate web of embedded systems, the seamless and reliable transfer of data is the backbone of
+                efficient communication. In addressing the evolving demands of larger data sets, the Controller Area
+                Network - Transport Protocol (CAN TP) emerges as a specialized solution. This protocol, an extension of
+                the robust CAN framework, is designed to handle the complexities of transmitting substantial data
+                payloads. </p>
+            <button><a href="./controller-area-network.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Controller Area Network - Flexible Data-rate (CAN-FD) : </h2>
+            <h3>Unveiling the Evolution of CAN</h3>
+            <section class="img_2"></section>
+            <p>In the ever-evolving landscape of embedded systems, communication protocols continually adapt to meet the
+                demands of modern applications. One such evolution is the Controller Area Network - Flexible Data-rate
+                (CAN-FD). Join us in a closer exploration of this advanced variant, shedding light on its enhanced
+                capabilities, applications, and contributions to the future of embedded communication.</p>
+            <button><a href="./controller-area-network-flexible-data-rate.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Controller Area Network (CAN) in Embedded Systems:</h2>
+            <h3> A Comprehensive Exploration</h3>
+            <section class="img_3"></section>
+            <p>In the intricate tapestry of embedded systems, communication is the lifeblood that orchestrates seamless
+                interactions among components. Enter the Controller Area Network (CAN), a stalwart protocol revered for
+                its reliability and versatility, particularly in automotive and industrial applications.</p>
+            <button><a href="./controller-area-network-embedded.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Embarking on the Digital Frontier: </h2>
+            <h3> Navigating the Journey of Website Development</h3>
+            <section class="img_4"></section>
+            <p>In the digital age, a robust online presence is the heartbeat of any business or individual endeavor.
+                Website development is the gateway to this virtual landscape, where creativity meets functionality.
+                Let's embark on a journey through the intricate process of crafting a website, exploring the key
+                elements, trends, and the art of creating a digital masterpiece.</p>
+            <button><a href="./website-development.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Revolutionizing Urban Mobility:</h2>
+            <h3>The Rise of Electric Pedal Scooters in India</h3>
+            <section class="img_5"></section>
+            <p>In the bustling streets of India, a quiet revolution is taking place in the form of electric pedal
+                scooters. As the nation grapples with traffic congestion and environmental concerns, the emergence of
+                these eco-friendly two-wheelers is reshaping the way we commute. Let's delve into the world of pedal
+                scooters, exploring their impact, advantages, and the surge in popularity across Indian cities.</p>
+            <button><a href="./electric_pedal-scooters.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Switched Reluctance Motors in Automotive Applications:</h2>
+            <h3>Powering the Future of Electric Mobility</h3>
+            <section class="img_6"></section>
+            <p>As the automotive industry pivots towards sustainable solutions, the spotlight is on electric propulsion
+                technologies. Switched Reluctance Motors (SRMs) have emerged as a compelling choice, offering unique
+                advantages for electric vehicles (EVs). In this blog post, we'll explore the principles behind SRMs and
+                their growing significance in automotive applications.</p>
+            <button><a href="./future-of-electric-mobility.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Optimize Your Academic Journey:</h2>
+            <h3>Choosing the Best Project with us at PEPS-TECH</h3>
+            <section class="img_7"></section>
+            <p>Are you a student eager to shine in your academic pursuits? Look no further! Our project center is your
+                gateway to excellence, providing a nurturing environment for innovative projects and hands-on learning.
+                Discover why we stand out among project centers, offering a unique blend of expertise, cutting-edge
+                technology, and personalized guidance.</p>
+            <button><a href="./optimize-your-academic-journey.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Empowering Electrical Engineering:</h2>
+            <h3>The Rise of Artificial Intelligence</h3>
+            <section class="img_8"></section>
+            <p>In the dynamic realm of electrical engineering, innovation is the driving force that propels industries
+                forward. One of the most transformative technologies in recent times is Artificial Intelligence (AI). In
+                this blog post, we'll explore the symbiotic relationship between AI and electrical engineering,
+                unraveling the ways in which AI is reshaping the landscape of this critical field.</p>
+            <button><a href="./rise-of-artificial-intelligence.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Unleashing the Power: </h2>
+            <h3>A Comprehensive Guide to Electric Vehicle Batteries for Bikes</h3>
+            <section class="img_9"></section>
+            <p>Welcome to our comprehensive guide on electric vehicle batteries tailored for bikes. As the world shifts
+                towards sustainable transportation, understanding the heart of electric bikes—the battery—is crucial. In
+                this blog, we'll explore the various types of batteries, focusing on the ever-popular lithium-ion
+                technology and other emerging options. Let's embark on a journey to discover the power-packed future of
+                electric bike batteries.</p>
+            <button><a href="./guide-to-electric-vehicle-batteries.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Direct Torque Control (DTC): </h2>
+            <h3>Unleashing Precision in BLDC Motor Control</h3>
+            <section class="img_10"></section>
+            <p>Direct Torque Control (DTC) stands out as a sophisticated and dynamic technique within the realm of BLDC
+                motor control. In this section, we'll delve into the principles, advantages, and applications of DTC,
+                showcasing how it facilitates instantaneous torque control and enhances the overall performance of BLDC
+                motors.</p>
+            <button><a href="./direct-torque-control.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Mastering BLDC Motor Control Techniques: </h2>
+            <h3>A Comprehensive Guide</h3>
+            <section class="img_11"></section>
+            <p>Brushless DC (BLDC) motors have become integral to countless applications, from electric vehicles to
+                industrial automation. The efficiency and performance of these motors are greatly influenced by the
+                control techniques employed. In this guide, we'll explore various BLDC motor control techniques,
+                shedding light on their principles, advantages, and applications.</p>
+            <button><a href="./mastering-bldc-motor-control-techniques.html">Read More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>The Crucial Role of Hall Effect Sensors in Motor Control Algorithms</h2>
+            <section class="img_12"></section>
+            <p>In the realm of motor control algorithms, the integration of sensors is paramount for achieving precision
+                and efficiency. Among these, Hall Effect sensors play a crucial role, providing real-time feedback that
+                is instrumental in optimizing motor performance. In this section, we will unravel the significance of
+                Hall Effect sensors in motor control algorithms.</p>
+            <button><a href="./the-crucial-role-of-hall-effect-sensors-in-motor-control-algorithms.html">Read
+                    More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Field-Oriented Control (FOC) and Space Vector Modulation:</h2>
+            <h3>Elevating PMSM Motor Precision</h3>
+            <section class="img_13"></section>
+            <p>In the pursuit of precision in Permanent Magnet Synchronous Motors (PMSM), the synergy of Field-Oriented
+                Control (FOC) and Space Vector Modulation (SVM) emerges as a powerful combination. This section unravels
+                the intricacies of FOC and delves into how SVM enhances the precision and efficiency of PMSM motor
+                control.</p>
+            <button><a
+                    href="./field-oriented-control-foc-and-space-vector-modulation-elevating-pmsm-motor-precision.html">Read
+                    More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Field-Oriented Control (FOC):</h2>
+            <h3>Precision in PMSM Motor Mastery</h3>
+            <section class="img_14"></section>
+            <p>Field-Oriented Control (FOC) stands as a pinnacle in the control of Permanent Magnet Synchronous Motors
+                (PMSM), offering unparalleled precision and efficiency. In this section, we will unravel the intricacies
+                of FOC, shedding light on its principles and the transformative impact it has on PMSM motor performance.
+            </p>
+            <button><a href="./field-oriented-control-foc-precision-in-pmsm-motor-mastery.html">Read
+                    More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Unveiling the Power of PMSM Motors:</h2>
+            <h3>A Deep Dive into Control Techniques</h3>
+            <section class="img_15"></section>
+            <p>Permanent Magnet Synchronous Motors (PMSM) have become integral components in various industrial
+                applications due to their efficiency, reliability, and precise control capabilities. In this blog post,
+                we will explore the fascinating world of PMSM motors, delving into their fundamental principles and the
+                advanced control techniques that make them a preferred choice in modern engineering.
+            </p>
+            <button><a href="./unveiling-the-power-of-pmsm-motors-a-deep-dive-into-control-techniques.html">Read
+                    More</a></button>
+        </section>
+        <section class="blog_post" data-aos="fade-up">
+            <h2>Battery Management Systems : </h2>
+            <h3>Key In Electric Vehicles Electric</h3>
+            <section class="img_16"></section>
+            <p>Electric vehicles need to have efficient Battery Management Systems (BMS) to keep the battery in the best
+                condition and ensure an even power distribution.
+            </p>
+            <button><a href="./battery-management-systems-key-in-electric-vehicles.html">Read
+                    More</a></button>
+        </section>
+    </section>
+    <footer>
+        <section class="__footer" data-aos="fade-up">
+            <p>
+                Peps Tech is the best and unavoidable choice for IT Software Training,
+                Research & Development, and Student Projects. Our core curriculum and
+                study materials are consistently unique in the field. The trainers
+                have experienced MNC professionals who follow a corporate style of
+                training that focuses on practical sessions.
+            </p>
+            <div class="services">
+                <ul>
+                    <li>
+                        <h5>Services</h5>
+                    </li>
+                    <li>R & D Projects</li>
+                    <li>Software Trainings</li>
+                    <li>Final Year Projects</li>
+                    <li>Mini Project</li>
+                    <li>Resume Building</li>
+                    <li>Internship</li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li>
+                        <h5>Contacts</h5>
+                    </li>
+                    <li>peps-tech@outlook.com</li>
+                    <li>+91-9944002795</li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <li>
+                        <h5>Address</h5>
+                    </li>
+                    <li>HiG 52A 2nd Floor,</li>
+                    <li>7th Cross Santhinikethan,</li>
+                    <li>Old ASTC Hudco</li>
+                    <li>Hosur,TamilNadu</li>
+                    <li>635109.</li>
+                </ul>
+            </div>
+            <section class="social">
+                <a href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg" target="_blank"><i
+                        class="bi bi-youtube"></i></a>
+                <a href="https://in.linkedin.com/company/peps-tech" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0" target="_blank"><i
+                        class="bi bi-whatsapp"></i></a>
+            </section>
+            <section class="__copyright">
+                <p>
+                    © 2022 - <span id="year"></span> Copyright:
+                    <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
+                </p>
+            </section>
+        </section>
+    </footer>
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <!-- <i class="bi bi-arrow-up svg-color"></i> -->
+        <i class="bi bi-chevron-up svg-color"></i>
+        <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
+    </button>
+    <script src="scripts.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
