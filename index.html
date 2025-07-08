@@ -1,285 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>
+      PEPS Tech | Research and Development Company Hosur | Training Center
+    </title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>
-    PEPS Tech | Research and Development Company Hosur | Training Center
-  </title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <div class="logo_menu">
-          <img src="./assets/logo.png" alt="Peps" width="200" />
-        </div>
-        <div class="menu_icon">
-          <i class="bi bi-list" style="color: #fff; font-size: 2em" onclick="show()"></i>
-        </div>
-      </div>
-      <ul id="navList">
-        <i class="bi bi-x" style="color: #fff; font-size: 2em" onclick="hide()"></i>
-        <li class="nav-link"><a href="#home" class="selected ">Home
-          </a>
-        </li>
-        <li class="nav-link"><a href="./about.html">About Us</a></li>
-        <li class="projects nav-link">
-          <a class="main_project" id="projectsLink">Projects</a>
-          <div class="projects_dropdown">
-            <ul>
-              <li><a href="">R&D Project</a></li>
-              <li><a href="">Academic Project</a></li>
-            </ul>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <div class="logo_menu">
+            <img src="./assets/logo.png" alt="Peps" width="200" />
           </div>
-        </li>
-        <li class="service nav-link">
-          <a class="main_service" id="serviceLink">Services</a>
-          <div class="services_dropdown">
-            <ul>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Trainings</a></li>
-              <li><a href="">Resume Building</a></li>
-              <li><a href="">Internship</a></li>
-            </ul>
+          <div class="menu_icon">
+            <i
+              class="bi bi-list"
+              style="color: #fff; font-size: 2em"
+              onclick="show()"
+            ></i>
           </div>
-        </li>
-        <li class="blog nav-link">
-          <a href="./blog.html">Blog</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="__head">
-      <h3>FUTURE MAKER : PEPS - TECH</h3>
-      <h6>Research and Development Company in Hosur</h6>
-      <br />
-      <h6>Doors of Your Dreams!!</h6>
-      <p>Peps Tech offers you the best IT training for your better future!</p>
-      <br />
-      <h6>Research and Development Company in Hosur:</h6>
-      <p>
-        PEPS TECH Research & Development Company is an independent market
-        research agency with broad research experience and an in-depth
-        understanding of the Asia market to offer mind-blowing insights for
-        business organizations. Also, PEPS Tech offers a wide range of
-        training in basic to highly advanced technologies. Also, We provide
-        internships and projects with practical knowledge.
-      </p>
-    </section>
-  </header>
-  <section class="projects_section">
-    <h1>Research and Development Project</h1>
-    <div class="projects_list" data-aos="fade-up">
-      <div class="card">
-        <img src="assets/evimg.jpg" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>Electric Vehicle Charging</b></h4>
         </div>
-      </div>
-      <div class="card">
-        <img src="assets/DataScience.jpg" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>Datascience on Agriculture</b></h4>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/IOT.jpg" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>IOT on Agriculture</b></h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="it_training_banner" data-aos="fade-up">
-    <div>
-      <h1>Best IT Training Center In India</h1>
-      <h2>Begin Today</h2>
-      <p>
-        PEPS Tech - Provides a variety of opportunities for both freshers and
-        seasoned professionals to advance their careers and expand their skill
-        sets inside different organizations. Best Training Center In India
-      </p>
-    </div>
-  </section>
-  <section class="it_training_content">
-    <div class="main_training_section">
-      <div class="training_section_one" data-aos="fade-up">
-        <div>
-          <h2>Training by Industry experts</h2>
-          <p>
-            You don't need any prior coding experience. There will be training
-            sessions led by industry professionals. Study and exercise, Keep
-            track of your daily learning progress to stay motivated. mock
-            exams and interviews to get you ready for the real thing.
-            Real-world tech tasks are completed as you advance, we guarantee.
-            Stay inspired and involved by socially learning with your
-            classmates in learning groups.
-          </p>
-        </div>
-        <img src="assets/women-studying.jpg" alt="" width="500" />
-      </div>
-      <div class="training_section_two" data-aos="fade-up">
-        <img src="assets/offlice-studying.jpg" alt="" width="500" />
-        <div>
-          <h2>Online and offline Classes</h2>
-          <p>
-            Hybrid Learning: The Best of Both Worlds, Tailored Learning
-            Experience: Choose a learning mode that suits your preferences and
-            lifestyle. Our hybrid learning model allows you to seamlessly
-            transition between online and offline classes based on your needs.
-            Enjoy the benefits of both worlds without compromise.<br /> Adaptive
-            Education: We recognize that every learner has unique needs. Our
-            hybrid approach ensures adaptability, allowing you to switch
-            between online and offline classes as circumstances change. This
-            adaptability ensures that your educational journey remains
-            uninterrupted. At PEPS-TECH, we believe in providing diverse and
-            inclusive learning opportunities. Whether you thrive in a virtual
-            environment, prefer the structure of a physical classroom, or
-            desire a combination of both, we're here to support your
-            educational aspirations. Join us in embracing the versatility of
-            online and offline classes as we embark on a journey of knowledge,
-            growth, and lifelong learning.
-          </p>
-        </div>
-      </div>
-      <div class="training_section_three" data-aos="fade-up">
-        <div>
-          <h2>Learn Trending and Evergreen Courses</h2>
-          <p>
-            Our program consists of a few courses related to the most recent
-            advancements in information technology and software, such as
-            business intelligence and analytics, DevOps, cloud computing,
-            cloud integration, the internet of things, Matlab, Python, and
-            Java. Release Management and our highly skilled trainers
-            collaborated to generate exceptional training materials.
-          </p>
-        </div>
-        <img src="assets/studying-with-lap.jpg" alt="" width="500" />
-      </div>
-    </div>
-  </section>
-  <section class="service_section" data-aos="fade-up">
-    <h1>Services</h1>
-    <div class="service_list">
-      <div class="card">
-        <!-- <img src="assets/evimg.jpg" alt="Avatar" style="width: 100%" /> -->
-        <h3>Research Project</h3>
-        <div class="button">
-          <button>more</button>
-        </div>
-        <!-- <div class="container">
-            <h4><b>Electric Vehicle Charging</b></h4>
-          </div> -->
-      </div>
-      <div class="card">
-        <h3>Academic Main Project</h3>
-        <div class="button">
-          <button>more</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Academic Mini Project</h3>
-        <div class="button">
-          <button>more</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Training (sw/Courses)</h3>
-        <div class="button">
-          <button>more</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Resume Building</h3>
-        <div class="button">
-          <button>more</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Internship</h3>
-        <div class="button">
-          <button>more</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer data-aos="fade-up">
-    <section class="__footer">
-      <p>
-        Peps Tech is the best and unavoidable choice for IT Software Training,
-        Research & Development, and Student Projects. Our core curriculum and
-        study materials are consistently unique in the field. The trainers
-        have experienced MNC professionals who follow a corporate style of
-        training that focuses on practical sessions.
-      </p>
-      <div class="services">
-        <ul>
-          <li>
-            <h5>Services</h5>
+        <ul id="navList">
+          <i
+            class="bi bi-x"
+            style="color: #fff; font-size: 2em"
+            onclick="hide()"
+          ></i>
+          <li class="nav-link"><a href="#home" class="selected">Home </a></li>
+          <li class="nav-link"><a href="./about/index.html">About Us</a></li>
+          <li class="projects nav-link">
+            <a class="main_project" id="projectsLink">Projects</a>
+            <div class="projects_dropdown">
+              <ul>
+                <li><a href="">R&D Project</a></li>
+                <li><a href="">Academic Project</a></li>
+              </ul>
+            </div>
           </li>
-          <li>R & D Projects</li>
-          <li>Software Trainings</li>
-          <li>Final Year Projects</li>
-          <li>Mini Project</li>
-          <li>Resume Building</li>
-          <li>Internship</li>
-        </ul>
-      </div>
-      <div class="contacts">
-        <ul>
-          <li>
-            <h5>Contacts</h5>
+          <li class="service nav-link">
+            <a class="main_service" id="serviceLink">Services</a>
+            <div class="services_dropdown">
+              <ul>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Trainings</a></li>
+                <li><a href="">Resume Building</a></li>
+                <li><a href="">Internship</a></li>
+              </ul>
+            </div>
           </li>
-          <li>peps-tech@outlook.com</li>
-          <li>+91-9944002795</li>
-        </ul>
-      </div>
-      <div class="address">
-        <ul>
-          <li>
-            <h5>Address</h5>
+          <li class="blog nav-link">
+            <a href="./blog.html">Blog</a>
           </li>
-          <li>HiG 52A 2nd Floor,</li>
-          <li>7th Cross Santhinikethan,</li>
-          <li>Old ASTC Hudco</li>
-          <li>Hosur,TamilNadu</li>
-          <li>635109.</li>
         </ul>
-      </div>
-      <section class="social">
-        <a href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/" target="_blank"><i
-            class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg" target="_blank"><i
-            class="bi bi-youtube"></i></a>
-        <a href="https://in.linkedin.com/company/peps-tech" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0" target="_blank"><i
-            class="bi bi-whatsapp"></i></a>
-      </section>
-      <section class="__copyright">
+      </nav>
+      <section class="__head">
+        <h3>FUTURE MAKER : PEPS - TECH</h3>
+        <h6>Research and Development Company in Hosur</h6>
+        <br />
+        <h6>Doors of Your Dreams!!</h6>
+        <p>Peps Tech offers you the best IT training for your better future!</p>
+        <br />
+        <h6>Research and Development Company in Hosur:</h6>
         <p>
-          © 2022 - <span id="year"></span> Copyright:
-          <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
+          PEPS TECH Research & Development Company is an independent market
+          research agency with broad research experience and an in-depth
+          understanding of the Asia market to offer mind-blowing insights for
+          business organizations. Also, PEPS Tech offers a wide range of
+          training in basic to highly advanced technologies. Also, We provide
+          internships and projects with practical knowledge.
         </p>
       </section>
+    </header>
+    <section class="projects_section">
+      <h1>Research and Development Project</h1>
+      <div class="projects_list" data-aos="fade-up">
+        <div class="card">
+          <img src="assets/evimg.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Electric Vehicle Charging</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/DataScience.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Datascience on Agriculture</b></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/IOT.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>IOT on Agriculture</b></h4>
+          </div>
+        </div>
+      </div>
     </section>
-  </footer>
-  <button class="scroll-top scroll-to-target" data-target="html">
-    <!-- <i class="bi bi-arrow-up svg-color"></i> -->
-    <i class="bi bi-chevron-up svg-color"></i>
-    <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
-  </button>
-  <script src="scripts.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <section class="it_training_banner" data-aos="fade-up">
+      <div>
+        <h1>Best IT Training Center In India</h1>
+        <h2>Begin Today</h2>
+        <p>
+          PEPS Tech - Provides a variety of opportunities for both freshers and
+          seasoned professionals to advance their careers and expand their skill
+          sets inside different organizations. Best Training Center In India
+        </p>
+      </div>
+    </section>
+    <section class="it_training_content">
+      <div class="main_training_section">
+        <div class="training_section_one" data-aos="fade-up">
+          <div>
+            <h2>Training by Industry experts</h2>
+            <p>
+              You don't need any prior coding experience. There will be training
+              sessions led by industry professionals. Study and exercise, Keep
+              track of your daily learning progress to stay motivated. mock
+              exams and interviews to get you ready for the real thing.
+              Real-world tech tasks are completed as you advance, we guarantee.
+              Stay inspired and involved by socially learning with your
+              classmates in learning groups.
+            </p>
+          </div>
+          <img src="assets/women-studying.jpg" alt="" width="500" />
+        </div>
+        <div class="training_section_two" data-aos="fade-up">
+          <img src="assets/offlice-studying.jpg" alt="" width="500" />
+          <div>
+            <h2>Online and offline Classes</h2>
+            <p>
+              Hybrid Learning: The Best of Both Worlds, Tailored Learning
+              Experience: Choose a learning mode that suits your preferences and
+              lifestyle. Our hybrid learning model allows you to seamlessly
+              transition between online and offline classes based on your needs.
+              Enjoy the benefits of both worlds without compromise.<br />
+              Adaptive Education: We recognize that every learner has unique
+              needs. Our hybrid approach ensures adaptability, allowing you to
+              switch between online and offline classes as circumstances change.
+              This adaptability ensures that your educational journey remains
+              uninterrupted. At PEPS-TECH, we believe in providing diverse and
+              inclusive learning opportunities. Whether you thrive in a virtual
+              environment, prefer the structure of a physical classroom, or
+              desire a combination of both, we're here to support your
+              educational aspirations. Join us in embracing the versatility of
+              online and offline classes as we embark on a journey of knowledge,
+              growth, and lifelong learning.
+            </p>
+          </div>
+        </div>
+        <div class="training_section_three" data-aos="fade-up">
+          <div>
+            <h2>Learn Trending and Evergreen Courses</h2>
+            <p>
+              Our program consists of a few courses related to the most recent
+              advancements in information technology and software, such as
+              business intelligence and analytics, DevOps, cloud computing,
+              cloud integration, the internet of things, Matlab, Python, and
+              Java. Release Management and our highly skilled trainers
+              collaborated to generate exceptional training materials.
+            </p>
+          </div>
+          <img src="assets/studying-with-lap.jpg" alt="" width="500" />
+        </div>
+      </div>
+    </section>
+    <section class="service_section" data-aos="fade-up">
+      <h1>Services</h1>
+      <div class="service_list">
+        <div class="card">
+          <!-- <img src="assets/evimg.jpg" alt="Avatar" style="width: 100%" /> -->
+          <h3>Research Project</h3>
+          <div class="button">
+            <button>more</button>
+          </div>
+          <!-- <div class="container">
+            <h4><b>Electric Vehicle Charging</b></h4>
+          </div> -->
+        </div>
+        <div class="card">
+          <h3>Academic Main Project</h3>
+          <div class="button">
+            <button>more</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Academic Mini Project</h3>
+          <div class="button">
+            <button>more</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Training (sw/Courses)</h3>
+          <div class="button">
+            <button>more</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Resume Building</h3>
+          <div class="button">
+            <button>more</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Internship</h3>
+          <div class="button">
+            <button>more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer data-aos="fade-up">
+      <section class="__footer">
+        <p>
+          Peps Tech is the best and unavoidable choice for IT Software Training,
+          Research & Development, and Student Projects. Our core curriculum and
+          study materials are consistently unique in the field. The trainers
+          have experienced MNC professionals who follow a corporate style of
+          training that focuses on practical sessions.
+        </p>
+        <div class="services">
+          <ul>
+            <li>
+              <h5>Services</h5>
+            </li>
+            <li>R & D Projects</li>
+            <li>Software Trainings</li>
+            <li>Final Year Projects</li>
+            <li>Mini Project</li>
+            <li>Resume Building</li>
+            <li>Internship</li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <ul>
+            <li>
+              <h5>Contacts</h5>
+            </li>
+            <li>peps-tech@outlook.com</li>
+            <li>+91-9944002795</li>
+          </ul>
+        </div>
+        <div class="address">
+          <ul>
+            <li>
+              <h5>Address</h5>
+            </li>
+            <li>HiG 52A 2nd Floor,</li>
+            <li>7th Cross Santhinikethan,</li>
+            <li>Old ASTC Hudco</li>
+            <li>Hosur,TamilNadu</li>
+            <li>635109.</li>
+          </ul>
+        </div>
+        <section class="social">
+          <a
+            href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
+            target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
+            target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="https://in.linkedin.com/company/peps-tech" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
+            target="_blank"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+        </section>
+        <section class="__copyright">
+          <p>
+            © 2022 - <span id="year"></span> Copyright:
+            <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
+          </p>
+        </section>
+      </section>
+    </footer>
+    <button class="scroll-top scroll-to-target" data-target="html">
+      <!-- <i class="bi bi-arrow-up svg-color"></i> -->
+      <i class="bi bi-chevron-up svg-color"></i>
+      <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
+    </button>
+    <script src="scripts.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
