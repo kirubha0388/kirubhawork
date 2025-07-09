@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEPS Tech | Upgrade YOUR skills for better future</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header & Nav -->
+    <!-- Header & Nav -->
+    <header
+      class="bg-gradient-to-r from-[#013554] to-[#8b5cf6] rounded-br-[10%] md:rounded-br-[15em] h-auto pb-16 md:pb-32"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 pt-10 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="font-bold text-white text-xl sm:text-2xl tracking-wide">
+          <!-- PEPS-TECH -->
+          <img src="./assets/logo.png" alt="Peps" width="200" />
+          <!-- <img
+            src="./assets/logo.png"
+            alt="Peps"
+            width="200"
+            class="invert brightness-0"
+          /> -->
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav
+          class="hidden md:flex gap-6 lg:gap-8 items-center text-white font-medium text-sm lg:text-base"
+        >
+          <a href="#home" class="hover:text-pink-400">Home</a>
+          <a href="./about/" class="hover:text-pink-400">About Us</a>
+
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Projects
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-40 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li>
+                  <a href="#" class="hover:text-indigo-600">R&D Project</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Academic Project</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Services
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-48 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li><a href="#" class="hover:text-indigo-600">Projects</a></li>
+                <li><a href="#" class="hover:text-indigo-600">Trainings</a></li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Resume Building</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Internship</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-white text-3xl" id="menu-toggle">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col gap-3 px-4 py-4 text-white font-medium bg-[#013554] rounded-lg mt-2 space-y-2"
+      >
+        <a href="#home" class="hover:text-pink-400">Home</a>
+        <a href="./about/" class="hover:text-pink-400">About Us</a>
+
+        <div>
+          <div class="font-semibold text-white">Projects</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">R&D Project</a></li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Academic Project</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-semibold text-white">Services</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">Projects</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Trainings</a></li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Resume Building</a>
+            </li>
+            <li><a href="#" class="hover:text-indigo-400">Internship</a></li>
+          </ul>
+        </div>
+
+        <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+      </div>
+      <!-- Hero Section -->
+      <div
+        class="container mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-10"
+      >
+        <!-- Left Content -->
+        <div class="flex-1 text-center md:text-left text-white">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4"
+          >
+            FUTURE MAKER: <span class="text-pink-400">PEPS - TECH</span>
+          </h1>
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
+            Research and Development Company in Hosur
+          </h2>
+          <p class="text-base sm:text-lg mb-3 italic">Doors of Your Dreams!!</p>
+          <p class="text-sm sm:text-base mb-4">
+            Peps Tech offers the best IT training to build a brighter future
+            with smart skills and real-world knowledge.
+          </p>
+          <p class="text-sm sm:text-base text-white/90">
+            PEPS TECH is an independent research company with deep Asia market
+            expertise, delivering insightful solutions for businesses. We also
+            provide advanced tech training, internships, and hands-on project
+            experience for students and professionals alike.
+          </p>
+          <a
+            href="#courses"
+            class="mt-6 inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-lg shadow transition"
+          >
+            Explore Courses
+          </a>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex-1 flex justify-center">
+          <div class="bg-white/20 p-3 sm:p-4 rounded-xl shadow-lg">
+            <img
+              src="images/01d98a63-915e-4e9e-8098-d118cef3e431-removebg-preview.png"
+              alt="Hero"
+              class="w-64 sm:w-80 md:w-[24rem] lg:w-[30rem] h-auto object-contain scale-x-[-1]"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Partners -->
+    <!-- <section class="py-8 bg-white">
+      <div class="container mx-auto px-4">
+        <h3 class="text-center text-lg font-semibold mb-6 text-gray-700">
+          Our Company and Partners
+        </h3>
+        <div class="flex flex-wrap justify-center gap-8 items-center">
+          <img src="assets/microsoft.png" alt="Microsoft" class="h-10" />
+          <img src="assets/treehouse.png" alt="Treehouse" class="h-10" />
+          <img src="assets/amazon.png" alt="Amazon" class="h-10" />
+          <img src="assets/slack.png" alt="Slack" class="h-10" />
+          <img src="assets/google.png" alt="Google" class="h-10" />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Courses -->
+    <section id="courses" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-2">Our Courses</h2>
+        <div class="flex justify-center gap-6 mb-8 flex-wrap">
+          <button
+            class="text-indigo-600 font-semibold border-b-2 border-indigo-600 px-2"
+          >
+            Top Rated
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Development
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Design
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Music
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Marketing
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Business
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Photography
+          </button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Course Card 1 -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/evimg.jpg"
+              alt="Modern AI"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">
+              Modern Artificial Intelligence with deep coding
+            </h3>
+            <div class="flex items-center text-yellow-500 mb-2">
+              <i class="bi bi-star-fill"></i>
+              <span class="ml-1 font-semibold">4.9</span>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">$49.99</span>
+              <a
+                href="#"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <!-- Course Card 2 -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/DataScience.jpg"
+              alt="Figma UI/UX"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">
+              Figma UI/UX Design essentials Bootcamp
+            </h3>
+            <div class="flex items-center text-yellow-500 mb-2">
+              <i class="bi bi-star-fill"></i>
+              <span class="ml-1 font-semibold">4.9</span>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">$49.99</span>
+              <a
+                href="#"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <!-- Course Card 3 -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/IOT.jpg"
+              alt="Complete Figma"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">
+              Complete Figma mega course UI/UX Design beginner to pro
+            </h3>
+            <div class="flex items-center text-yellow-500 mb-2">
+              <i class="bi bi-star-fill"></i>
+              <span class="ml-1 font-semibold">4.9</span>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">$49.99</span>
+              <a
+                href="#"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <!-- Course Card 4 -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/studying-with-lap.jpg"
+              alt="Fullstack"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">
+              The Complete 2022 Fullstack Web Developer course
+            </h3>
+            <div class="flex items-center text-yellow-500 mb-2">
+              <i class="bi bi-star-fill"></i>
+              <span class="ml-1 font-semibold">4.9</span>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">$49.99</span>
+              <a
+                href="#"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-8">
+          <button
+            class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold px-6 py-2 rounded-lg"
+          >
+            Show more <i class="bi bi-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features and Services -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Our Features and Services
+        </h2>
+        <p class="text-center text-gray-500 mb-10 max-w-2xl mx-auto">
+          PEPS Tech - Provides a variety of opportunities for both freshers and
+          seasoned professionals to advance their careers and expand their skill
+          sets inside different organizations. Best Training Center In Hosur.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-infinity"></i>
+            </div>
+            <h4 class="font-bold mb-1">Life Time Access</h4>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h4 class="font-bold mb-1">Online Classes</h4>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-award"></i>
+            </div>
+            <h4 class="font-bold mb-1">Get Certificate</h4>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-person-badge"></i>
+            </div>
+            <h4 class="font-bold mb-1">Expert Trainers</h4>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <h4 class="font-bold mb-1">Great Result</h4>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-cash-coin"></i>
+            </div>
+            <h4 class="font-bold mb-1">Best Price</h4>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform to grow & Support -->
+    <section class="py-16 bg-gray-50">
+      <div
+        class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12"
+      >
+        <div class="flex-1 flex flex-col items-center lg:items-start">
+          <div class="bg-white rounded-full p-4 mb-4 shadow-lg">
+            <img
+              src="assets/women-studying.jpg"
+              alt="Platform to grow"
+              class="w-32 h-32 object-cover rounded-full"
+            />
+          </div>
+          <h3 class="text-2xl font-bold mb-2 text-center lg:text-left">
+            Best Platform to grow
+          </h3>
+          <p class="text-gray-500 mb-4 text-center lg:text-left">
+            Lorem ipsum dolor sit amet consectetur. Maecenas ac elementum lacus
+            vel vitae sed nisi aliquam aliquet. Vel adipiscing placerat felis
+            faucibus diam mauris rutrum vitae. Justo adipiscing integer dictum
+            tortor viverra vel.
+          </p>
+          <a
+            href="#"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg"
+            >Learn more</a
+          >
+        </div>
+        <div class="flex-1 flex flex-col items-center lg:items-start">
+          <div class="bg-white rounded-full p-4 mb-4 shadow-lg">
+            <img
+              src="assets/offlice-studying.jpg"
+              alt="Support"
+              class="w-32 h-32 object-cover rounded-full"
+            />
+          </div>
+          <h3 class="text-2xl font-bold mb-2 text-center lg:text-left">
+            24/7 Students Support
+          </h3>
+          <p class="text-gray-500 mb-4 text-center lg:text-left">
+            Lorem ipsum dolor sit amet consectetur. Sit et lacus blandit
+            elementum dictumst amet elit. Varius faucibus sit donec molestie.
+            Vulputate sodales diam et at erat tempor. Tempor condimentum sodales
+            morbi nunc.
+          </p>
+          <a
+            href="#"
+            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-lg"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News & Article -->
+    <section class="py-16 bg-purple-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Our Latest News & Article
+        </h2>
+        <p class="text-center text-gray-500 mb-10 max-w-2xl mx-auto">
+          Get the latest updates and articles from our team.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/DataScience.jpg"
+              alt="Web Development"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Web Development</h3>
+            <p class="text-gray-500 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, sit amet.
+            </p>
+            <div class="flex items-center text-gray-400 text-xs">
+              <i class="bi bi-calendar"></i>
+              <span class="ml-1">20.02.2022</span>
+              <a href="#" class="ml-auto text-indigo-600 hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/evimg.jpg"
+              alt="Business"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Business</h3>
+            <p class="text-gray-500 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, sit amet.
+            </p>
+            <div class="flex items-center text-gray-400 text-xs">
+              <i class="bi bi-calendar"></i>
+              <span class="ml-1">19.02.2022</span>
+              <a href="#" class="ml-auto text-indigo-600 hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/IOT.jpg"
+              alt="Technology"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Technology</h3>
+            <p class="text-gray-500 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, sit amet.
+            </p>
+            <div class="flex items-center text-gray-400 text-xs">
+              <i class="bi bi-calendar"></i>
+              <span class="ml-1">18.02.2022</span>
+              <a href="#" class="ml-auto text-indigo-600 hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-white">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1">
+          <img
+            src="assets/studying-with-lap.jpg"
+            alt="Newsletter"
+            class="w-80 h-80 object-contain rounded-xl shadow-lg mx-auto"
+          />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-4">Subscribe to our newsletter</h2>
+          <p class="text-gray-500 mb-6">
+            Lorem ipsum dolor sit amet consectetur. Vitae enim est urna et massa
+            eros. Sed varius convallis netus nullam.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              placeholder="Enter your mail"
+              class="border border-gray-300 rounded-lg px-4 py-2 flex-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg"
+            >
+              Join Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="font-bold text-xl mb-2">PEPS-TECH</div>
+          <p class="text-gray-400 text-sm mb-4">
+            Learn smart, deliver smart, achieve smart with us. We bridge the gap
+            with valuable, up-to-date skills via technology.
+          </p>
+          <div class="flex gap-3 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="bi bi-facebook text-2xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="bi bi-instagram text-2xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="bi bi-youtube text-2xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="bi bi-linkedin text-2xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="bi bi-whatsapp text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">General</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Policies</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li><a href="#">Security of Safeguards</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Get in touch</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>
+              Follow us on social media and stay updated with the latest news
+              and offers.
+            </li>
+            <li class="mt-2">+91-9944002795</li>
+            <li>peps-tech@outlook.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-xs mt-8">
+        © 2022 - <span id="year"></span> PEPS-TECH. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <!-- Toggle Script -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
