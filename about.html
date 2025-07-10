@@ -1,221 +1,672 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | PEPS Tech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peps Technologies</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-
-<body>
-    <header>
-        <nav class="about__nav">
-            <div class="logo">
-                <div class="logo_menu">
-                    <img src="./assets/logo.png" alt="Peps" width="200" />
-                </div>
-                <div class="menu_icon">
-                    <i class="bi bi-list" style="color: #fff; font-size: 2em" onclick="show()"></i>
-                </div>
+  <body class="bg-white text-gray-800">
+    <!-- Header & Nav -->
+    <header
+      class="bg-gradient-to-r from-[#013554] to-[#8b5cf6] rounded-br-[10%] md:rounded-br-[15em] h-auto pb-16 md:pb-32"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 pt-10 flex items-center justify-between"
+      >
+        <div class="font-bold text-white text-xl sm:text-2xl tracking-wide">
+          <img src="./assets/logo.png" alt="Peps" width="200" />
+        </div>
+        <nav
+          class="hidden md:flex gap-6 lg:gap-8 items-center text-white font-medium text-sm lg:text-base"
+        >
+          <a href="index.html#home" class="hover:text-pink-400">Home</a>
+          <a
+            href="./about.html"
+            class="hover:text-pink-400 font-bold border-b-2 border-pink-400"
+            >About Us</a
+          >
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Projects
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-40 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li>
+                  <a
+                    href="./research-and-development.html"
+                    class="hover:text-indigo-600"
+                    >R&D Project</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./academic-project.html"
+                    class="hover:text-indigo-600"
+                    >Academic Project</a
+                  >
+                </li>
+              </ul>
             </div>
-            <ul id="navList">
-                <i class="bi bi-x" style="color: #fff; font-size: 2em" onclick="hide()"></i>
-                <li class="nav-link"><a href="./index.html">Home
-                    </a>
+          </div>
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Services
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-48 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li><a href="#" class="hover:text-indigo-600">Projects</a></li>
+                <li><a href="#" class="hover:text-indigo-600">Trainings</a></li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Resume Building</a>
                 </li>
-                <li class="nav-link"><a href="#home" class="selected">About Us</a></li>
-                <li class="projects nav-link">
-                    <a class="main_project" id="projectsLink">Projects</a>
-                    <div class="projects_dropdown">
-                        <ul>
-                            <li><a href="">R&D Project</a></li>
-                            <li><a href="">Academic Project</a></li>
-                        </ul>
-                    </div>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Internship</a>
                 </li>
-                <li class="service nav-link">
-                    <a class="main_service" id="serviceLink">Services</a>
-                    <div class="services_dropdown">
-                        <ul>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Trainings</a></li>
-                            <li><a href="">Resume Building</a></li>
-                            <li><a href="">Internship</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="blog nav-link">
-                    <a href="./blog.html">Blog</a>
-                </li>
-            </ul>
+              </ul>
+            </div>
+          </div>
+          <a href="./blog.html" class="hover:text-pink-400">Blog</a>
         </nav>
-        <section class="about__head">
-            <h1>MORE ABOUT PEPS-TECH</h1>
-        </section>
+        <button class="md:hidden text-white text-3xl" id="menu-toggle">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col gap-3 px-4 py-4 text-white font-medium bg-[#013554] rounded-lg mt-2 space-y-2"
+      >
+        <a href="index.html#home" class="hover:text-pink-400">Home</a>
+        <a
+          href="./about.html"
+          class="hover:text-pink-400 font-bold border-b-2 border-pink-400"
+          >About Us</a
+        >
+        <div>
+          <div class="font-semibold text-white">Projects</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">R&D Project</a></li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Academic Project</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold text-white">Services</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">Projects</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Trainings</a></li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Resume Building</a>
+            </li>
+            <li><a href="#" class="hover:text-indigo-400">Internship</a></li>
+          </ul>
+        </div>
+        <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+      </div>
+      <!-- About Hero -->
+      <div
+        class="container mx-auto px-4 py-16 flex flex-col items-center text-center text-white"
+      >
+        <h1 class="text-5xl font-extrabold mb-4">About PEPS Tech</h1>
+        <p class="text-xl max-w-2xl mb-6">
+          Bridging the gap between academia and industry through innovation,
+          hands-on training, and real-world projects.
+        </p>
+      </div>
     </header>
+
     <main>
-
-        <section class="who_we_are" data-aos="fade-up">
-            <h2>Who We Are?</h2>
-            <p>We are Research and Development company, we have in-house R&D Projects, We also provide Software Training
-                and Academic Projects support for the researchers / students.</p>
-            <p>At Peps Technologies, we are a team of passionate professionals dedicated to empowering individuals and
-                businesses through innovation and education. Our focus lies in bridging the gap between traditional
-                learning methods and modern technological advancements. We believe in providing comprehensive training
-                solutions that not only enhance skills but also prepare students for real-world challenges.</p>
-            <p>Founded with the mission to offer exceptional learning experiences, Peps Technologies combines industry
-                expertise with hands-on training. Our programs are designed to meet the evolving needs of the market,
-                ensuring that every student is equipped with the tools to succeed.</p>
-            <p>Our vision is to create a community of learners who are not only knowledgeable but also capable of making
-                a meaningful impact in their respective fields. We are committed to fostering a culture of continuous
-                learning, innovation, and collaboration.</p>
-        </section>
-
-        <section class="why_choose_us" data-aos="fade-up">
-            <div class="choose_us_section">
-                <div>
-                    <h2>Why Choose Us?</h2>
-                    <p>We are a forward-thinking Research & Development firm that helps businesses establish efficient
-                        methods
-                        for
-                        discovering potential clients and their needs, connecting you with the proper target market.</p>
-                    <p>By comprehending the underlying problems and providing tailored solutions to assist you in making
-                        data-driven
-                        decisions for your organization, we strive to deliver value.</p>
-                </div>
-                <img src="assets/evimg.jpg" alt="" width="500">
-            </div>
-        </section>
-
-        <section class="your_future" data-aos="fade-up">
-            <h1>Committed to Your Future</h1><br>
-            <p>Through a multidisciplinary approach to education that combines technical and hands-on learning, our
+      <!-- Our Story -->
+      <section class="py-16 bg-white">
+        <div
+          class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1">
+            <img
+              src="assets/about-team.jpg"
+              alt="Our Team"
+              class="w-80 h-80 object-contain rounded-xl shadow-lg mx-auto"
+            />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+            <p class="text-gray-700 mb-4">
+              Founded in Hosur, PEPS Tech is a leading Research & Development
+              and Training company. We are passionate about empowering students,
+              professionals, and organizations with the skills and experience
+              needed to thrive in the digital era.
+            </p>
+            <p class="text-gray-700 mb-4">
+              Our journey began with a vision to make high-quality, practical
+              education accessible to all. Today, we offer a wide range of
+              programs including internships, academic projects, IT training,
+              and placement support, all designed to deliver real-world impact.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 mb-4">
+              <li>
+                Live project internships for Engineering, Science, and Diploma
                 students
-                consistently succeed in the real world. Since we opened our doors, we’ve helped countless individuals
-                achieve their career and life dreams.</p><br>
-            <p>We are committed to providing excellent education, training, and resources so that our students will
-                thrive
-                in today’s competitive world. With flexible program options and great instructors, we’re sure you’ll be
-                satisfied with your education. Get in touch to learn more.</p>
-        </section>
+              </li>
+              <li>Academic project guidance and support in latest domains</li>
+              <li>
+                Corporate-style IT training in Python, Java, Embedded, IoT, Data
+                Science, and more
+              </li>
+              <li>
+                Placement assistance, resume building, and career guidance
+              </li>
+              <li>
+                Research & Development consultancy and innovation projects
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-
-        <section class="features" data-aos="fade-up">
-            <div class="features_section">
-                <h3>Experts as Teachers</h3>
-                <p>By learning technology with a professional who is well-versed in it, 70% of your needs will be
-                    satisfied.
-                </p>
-            </div>
-
-            <div class="features_section">
-                <h3>Fully-hands on Training</h3>
-                <p>We always emphasize hands-on instruction to ensure practical knowledge.</p>
-            </div>
-
-            <div class="features_section">
-                <h3>One-to-One Training</h3>
-                <p>We offer one-to-one training sessions with flexible timings for students.</p>
-            </div>
-            <div class="features_section">
-                <h3>Affordable Prices</h3>
-                <p>PEPS-TECH offers quality training with experts at affordable prices.</p>
-            </div>
-            <div class="features_section">
-                <h3>Tech Support</h3>
-                <p>If you require any software support, we are available to help. Our staff assists you in loading the
-                    necessary
-                    software into your computer.</p>
-            </div>
-        </section>
-
-        <section class="mission_vision" data-aos="fade-up">
-            <h2>Mission & Vision</h2>
-            <p>We aim to support researchers by breaking the hurdles and helping them accomplish their research ideas.
+      <!-- Our Mission & Vision -->
+      <section class="py-16 bg-gray-50">
+        <div
+          class="container mx-auto px-4 flex flex-col md:flex-row-reverse items-center gap-12"
+        >
+          <div class="flex-1">
+            <img
+              src="assets/evimg.jpg"
+              alt="Mission Vision"
+              class="w-80 h-80 object-contain rounded-xl shadow-lg mx-auto"
+            />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-4">Mission & Vision</h2>
+            <p class="text-gray-700 mb-4">
+              <span class="font-semibold">Our Mission:</span> To deliver
+              exceptional learning experiences, foster innovation, and empower
+              individuals to achieve their career and research goals.
             </p>
-            <blockquote>
-                "Our goal is to train and develop our students, adapt to shifting market demands, offer the finest
-                training,
-                encourage candidates to improve their presenting abilities in general, communicate useful knowledge, and
-                assist professionals in selecting the best career path."
+            <p class="text-gray-700 mb-4">
+              <span class="font-semibold">Our Vision:</span> To be a trusted
+              partner in education and R&D, creating a community of skilled
+              professionals and innovators who drive positive change.
+            </p>
+            <blockquote
+              class="italic text-indigo-700 border-l-4 border-indigo-400 pl-4"
+            >
+              "We believe in continuous learning, hands-on experience, and a
+              commitment to excellence."
             </blockquote>
-        </section>
-    </main>
-    <footer>
-        <section class="__footer" data-aos="fade-up">
-            <p>
-                Peps Tech is the best and unavoidable choice for IT Software Training,
-                Research & Development, and Student Projects. Our core curriculum and
-                study materials are consistently unique in the field. The trainers
-                have experienced MNC professionals who follow a corporate style of
-                training that focuses on practical sessions.
-            </p>
-            <div class="services">
-                <ul>
-                    <li>
-                        <h5>Services</h5>
-                    </li>
-                    <li>R & D Projects</li>
-                    <li>Software Trainings</li>
-                    <li>Final Year Projects</li>
-                    <li>Mini Project</li>
-                    <li>Resume Building</li>
-                    <li>Internship</li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <ul>
-                    <li>
-                        <h5>Contacts</h5>
-                    </li>
-                    <li>peps-tech@outlook.com</li>
-                    <li>+91-9944002795</li>
-                </ul>
-            </div>
-            <div class="address">
-                <ul>
-                    <li>
-                        <h5>Address</h5>
-                    </li>
-                    <li>HiG 52A 2nd Floor,</li>
-                    <li>7th Cross Santhinikethan,</li>
-                    <li>Old ASTC Hudco</li>
-                    <li>Hosur,TamilNadu</li>
-                    <li>635109.</li>
-                </ul>
-            </div>
-            <section class="social">
-                <a href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/" target="_blank"><i
-                        class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg" target="_blank"><i
-                        class="bi bi-youtube"></i></a>
-                <a href="https://in.linkedin.com/company/peps-tech" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0" target="_blank"><i
-                        class="bi bi-whatsapp"></i></a>
-            </section>
-            <section class="__copyright">
-                <p>
-                    © 2022 - <span id="year"></span> Copyright:
-                    <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
-                </p>
-            </section>
-        </section>
-    </footer>
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <!-- <i class="bi bi-arrow-up svg-color"></i> -->
-        <i class="bi bi-chevron-up svg-color"></i>
-        <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
-    </button>
-    <script src="scripts.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+          </div>
+        </div>
+      </section>
 
+      <!-- Why PEPS Tech -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">
+            Why Choose PEPS Tech?
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <h4 class="font-bold mb-1">Expert Trainers</h4>
+              <p class="text-gray-500 text-sm">
+                Learn from experienced professionals with real industry
+                exposure.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h4 class="font-bold mb-1">Hands-on Learning</h4>
+              <p class="text-gray-500 text-sm">
+                Work on live projects and gain practical skills that employers
+                value.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <i class="bi bi-award"></i>
+              </div>
+              <h4 class="font-bold mb-1">Certification</h4>
+              <p class="text-gray-500 text-sm">
+                Earn recognized certificates to boost your resume and career
+                prospects.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h4 class="font-bold mb-1">Placement Support</h4>
+              <p class="text-gray-500 text-sm">
+                Get placement assistance, resume building, and interview
+                preparation.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  class="bi bi-infinity"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916z"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-bold mb-1">Lifetime Access</h4>
+              <p class="text-gray-500 text-sm">
+                Access course materials and resources anytime, anywhere.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  class="bi bi-cash-coin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"
+                  />
+                  <path
+                    d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"
+                  />
+                  <path
+                    d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"
+                  />
+                  <path
+                    d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-bold mb-1">Affordable Fees</h4>
+              <p class="text-gray-500 text-sm">
+                Quality training and services at competitive prices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+          <h2 class="text-3xl font-bold mb-8">Meet Our Team</h2>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-8"
+          >
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team1.jpg"
+                alt="Founder"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Dr. S. Prakash</h4>
+              <span class="text-gray-500 text-sm">Founder & CEO</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team2.jpg"
+                alt="Co-Founder"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Ms. R. Priya</h4>
+              <span class="text-gray-500 text-sm">Co-Founder & CTO</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team3.jpg"
+                alt="Training Head"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Mr. K. Karthik</h4>
+              <span class="text-gray-500 text-sm">Training Head</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Expertise -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">
+            Our Core Expertise
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="text-xl font-bold mb-4 text-indigo-600">
+                Research & Development
+              </h3>
+              <ul class="space-y-3 text-gray-700">
+                <li>• Advanced Electric Vehicle Technologies</li>
+                <li>• IoT and Embedded Systems</li>
+                <li>• AI/ML Applications</li>
+                <li>• Power Electronics & Motor Control</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="text-xl font-bold mb-4 text-indigo-600">
+                Training Programs
+              </h3>
+              <ul class="space-y-3 text-gray-700">
+                <li>• Industry-Focused Curriculum</li>
+                <li>• Hands-on Project Experience</li>
+                <li>• Professional Certification</li>
+                <li>• Career Development Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Achievements -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Our Achievements</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">500+</div>
+              <p class="text-gray-600">Students Trained</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">100+</div>
+              <p class="text-gray-600">Successful Projects</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">50+</div>
+              <p class="text-gray-600">Corporate Partners</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">95%</div>
+              <p class="text-gray-600">Placement Rate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners & Collaborations -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
+          <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            We collaborate with leading institutions and industries to provide
+            the best opportunities for our students.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            <img
+              src="assets/partner1.png"
+              alt="Partner 1"
+              class="h-16 object-contain mx-auto grayscale hover:grayscale-0 transition-all"
+            />
+            <img
+              src="assets/partner2.png"
+              alt="Partner 2"
+              class="h-16 object-contain mx-auto grayscale hover:grayscale-0 transition-all"
+            />
+            <img
+              src="assets/partner3.png"
+              alt="Partner 3"
+              class="h-16 object-contain mx-auto grayscale hover:grayscale-0 transition-all"
+            />
+            <img
+              src="assets/partner4.png"
+              alt="Partner 4"
+              class="h-16 object-contain mx-auto grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Expanded Team Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl text-center">
+          <h2 class="text-3xl font-bold mb-8">Our Leadership Team</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team1.jpg"
+                alt="CEO"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Dr. S. Prakash</h4>
+              <span class="text-gray-500 text-sm">Founder & CEO</span>
+              <p class="text-gray-600 text-sm mt-2">20+ years in R&D</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team2.jpg"
+                alt="CTO"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Ms. R. Priya</h4>
+              <span class="text-gray-500 text-sm">Co-Founder & CTO</span>
+              <p class="text-gray-600 text-sm mt-2">15+ years in Tech</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team3.jpg"
+                alt="Training Head"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Mr. K. Karthik</h4>
+              <span class="text-gray-500 text-sm">Training Head</span>
+              <p class="text-gray-600 text-sm mt-2">10+ years in Training</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="assets/team4.jpg"
+                alt="Research Head"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow"
+              />
+              <h4 class="font-bold">Dr. M. Ramesh</h4>
+              <span class="text-gray-500 text-sm">Research Head</span>
+              <p class="text-gray-600 text-sm mt-2">12+ years in Research</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
+          <p class="text-gray-700 mb-6">
+            Join PEPS Tech and unlock your potential with hands-on training,
+            expert mentorship, and real-world projects.
+          </p>
+          <a
+            href="index-new.html#courses"
+            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-lg shadow transition"
+            >Explore Our Programs</a
+          >
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class="text-3xl font-bold text-center mb-8">Our Location</h2>
+          <div
+            class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-lg p-6"
+          >
+            <div class="flex-1 mb-6 md:mb-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.8123970232705!2d77.82244405427842!3d12.725658493827364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae70b9c1451e07%3A0xd1f4f74f83a59294!2sRaghavendra%20Theatre!5e0!3m2!1sen!2sin!4v1752164231543!5m2!1sen!2sin"
+                width="100%"
+                height="320"
+                style="border: 0; border-radius: 1rem; min-width: 250px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="PEPS Tech Location"
+              ></iframe>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+              <h3 class="text-xl font-bold mb-2 text-indigo-700">Visit Us</h3>
+              <p class="text-gray-700 mb-2">
+                <span class="font-semibold">PEPS-TECH</span><br />
+                HiG 52A 2nd Floor,<br />
+                7th Cross Santhinikethan,<br />
+                Old ASTC Hudco,<br />
+                Hosur, TamilNadu - 635109
+              </p>
+              <p class="text-gray-700 mb-2">
+                <i class="bi bi-telephone-fill text-indigo-600"></i>
+                <span class="ml-1">+91-9944002795</span>
+              </p>
+              <p class="text-gray-700">
+                <i class="bi bi-envelope-fill text-indigo-600"></i>
+                <span class="ml-1">peps-tech@outlook.com</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="font-bold text-xl mb-2">PEPS-TECH</div>
+          <p class="text-gray-400 text-sm mb-4">
+            Peps Tech is the best and unavoidable choice for IT Software
+            Training, Research & Development, and Student Projects. Our core
+            curriculum and study materials are consistently unique in the field.
+            The trainers have experienced MNC professionals who follow a
+            corporate style of training that focuses on practical sessions.
+          </p>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-facebook text-2xl"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-instagram text-2xl"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-youtube text-2xl"></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/company/peps-tech"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-linkedin text-2xl"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-whatsapp text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Services</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>R & D Projects</li>
+            <li>Software Trainings</li>
+            <li>Final Year Projects</li>
+            <li>Mini Project</li>
+            <li>Resume Building</li>
+            <li>Internship</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Contacts</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>peps-tech@outlook.com</li>
+            <li>+91-9944002795</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Address</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>HiG 52A 2nd Floor,</li>
+            <li>7th Cross Santhinikethan,</li>
+            <li>Old ASTC Hudco</li>
+            <li>Hosur, TamilNadu</li>
+            <li>635109.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-xs mt-8">
+        © 2022 - <span id="year"></span> Copyright:
+        <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
+      </div>
+    </footer>
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 z-50 bg-indigo-600 hover:bg-pink-500 text-white rounded-full p-3 shadow-lg transition-opacity opacity-0 pointer-events-none"
+    >
+      <i class="bi bi-chevron-up text-2xl leading-4"></i>
+    </button>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Scroll to top button logic
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollTopBtn.classList.remove("opacity-0", "pointer-events-none");
+        } else {
+          scrollTopBtn.classList.add("opacity-0", "pointer-events-none");
+        }
+      });
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
 </html>

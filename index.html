@@ -3,234 +3,608 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEPS Tech | Upgrade YOUR skills for better future</title>
     <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>
-      PEPS Tech | Research and Development Company Hosur | Training Center
-    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header & Nav -->
+    <header
+      class="bg-gradient-to-r from-[#013554] to-[#8b5cf6] rounded-br-[10%] md:rounded-br-[15em] h-auto pb-16 md:pb-32"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 pt-10 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="font-bold text-white text-xl sm:text-2xl tracking-wide">
+          <!-- PEPS-TECH -->
+          <img src="./assets/logo.png" alt="Peps" width="200" />
+          <!-- <img
+            src="./assets/logo.png"
+            alt="Peps"
+            width="200"
+            class="invert brightness-0"
+          /> -->
+        </div>
 
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <div class="logo_menu">
-            <img src="./assets/logo.png" alt="Peps" width="200" />
-          </div>
-          <div class="menu_icon">
-            <i
-              class="bi bi-list"
-              style="color: #fff; font-size: 2em"
-              onclick="show()"
-            ></i>
-          </div>
-        </div>
-        <ul id="navList">
-          <i
-            class="bi bi-x"
-            style="color: #fff; font-size: 2em"
-            onclick="hide()"
-          ></i>
-          <li class="nav-link"><a href="#home" class="selected">Home </a></li>
-          <li class="nav-link"><a href="./about/">About Us</a></li>
-          <li class="projects nav-link">
-            <a class="main_project" id="projectsLink">Projects</a>
-            <div class="projects_dropdown">
-              <ul>
-                <li><a href="">R&D Project</a></li>
-                <li><a href="">Academic Project</a></li>
+        <!-- Desktop Menu -->
+        <nav
+          class="hidden md:flex gap-6 lg:gap-8 items-center text-white font-medium text-sm lg:text-base"
+        >
+          <a
+            href="#home"
+            class="hover:text-pink-400 font-bold border-b-2 border-pink-400"
+            >Home</a
+          >
+          <a href="./about.html" class="hover:text-pink-400">About Us</a>
+
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Projects
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-40 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li>
+                  <a
+                    href="./research-and-development.html"
+                    class="hover:text-indigo-600"
+                    >R&D Project</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./academic-project.html"
+                    class="hover:text-indigo-600"
+                    >Academic Project</a
+                  >
+                </li>
               </ul>
             </div>
-          </li>
-          <li class="service nav-link">
-            <a class="main_service" id="serviceLink">Services</a>
-            <div class="services_dropdown">
-              <ul>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Trainings</a></li>
-                <li><a href="">Resume Building</a></li>
-                <li><a href="">Internship</a></li>
+          </div>
+
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Services
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-48 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li><a href="#" class="hover:text-indigo-600">Projects</a></li>
+                <li><a href="#" class="hover:text-indigo-600">Trainings</a></li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Resume Building</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Internship</a>
+                </li>
               </ul>
             </div>
-          </li>
-          <li class="blog nav-link">
-            <a href="./blog.html">Blog</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="__head">
-        <h3>FUTURE MAKER : PEPS - TECH</h3>
-        <h6>Research and Development Company in Hosur</h6>
-        <br />
-        <h6>Doors of Your Dreams!!</h6>
-        <p>Peps Tech offers you the best IT training for your better future!</p>
-        <br />
-        <h6>Research and Development Company in Hosur:</h6>
-        <p>
-          PEPS TECH Research & Development Company is an independent market
-          research agency with broad research experience and an in-depth
-          understanding of the Asia market to offer mind-blowing insights for
-          business organizations. Also, PEPS Tech offers a wide range of
-          training in basic to highly advanced technologies. Also, We provide
-          internships and projects with practical knowledge.
-        </p>
-      </section>
-    </header>
-    <section class="projects_section">
-      <h1>Research and Development Project</h1>
-      <div class="projects_list" data-aos="fade-up">
-        <div class="card">
-          <img src="assets/evimg.jpg" alt="Avatar" style="width: 100%" />
-          <div class="container">
-            <h4><b>Electric Vehicle Charging</b></h4>
           </div>
-        </div>
-        <div class="card">
-          <img src="assets/DataScience.jpg" alt="Avatar" style="width: 100%" />
-          <div class="container">
-            <h4><b>Datascience on Agriculture</b></h4>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/IOT.jpg" alt="Avatar" style="width: 100%" />
-          <div class="container">
-            <h4><b>IOT on Agriculture</b></h4>
-          </div>
-        </div>
+
+          <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-white text-3xl" id="menu-toggle">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
-    </section>
-    <section class="it_training_banner" data-aos="fade-up">
-      <div>
-        <h1>Best IT Training Center In India</h1>
-        <h2>Begin Today</h2>
-        <p>
-          PEPS Tech - Provides a variety of opportunities for both freshers and
-          seasoned professionals to advance their careers and expand their skill
-          sets inside different organizations. Best Training Center In India
-        </p>
-      </div>
-    </section>
-    <section class="it_training_content">
-      <div class="main_training_section">
-        <div class="training_section_one" data-aos="fade-up">
-          <div>
-            <h2>Training by Industry experts</h2>
-            <p>
-              You don't need any prior coding experience. There will be training
-              sessions led by industry professionals. Study and exercise, Keep
-              track of your daily learning progress to stay motivated. mock
-              exams and interviews to get you ready for the real thing.
-              Real-world tech tasks are completed as you advance, we guarantee.
-              Stay inspired and involved by socially learning with your
-              classmates in learning groups.
-            </p>
-          </div>
-          <img src="assets/women-studying.jpg" alt="" width="500" />
-        </div>
-        <div class="training_section_two" data-aos="fade-up">
-          <img src="assets/offlice-studying.jpg" alt="" width="500" />
-          <div>
-            <h2>Online and offline Classes</h2>
-            <p>
-              Hybrid Learning: The Best of Both Worlds, Tailored Learning
-              Experience: Choose a learning mode that suits your preferences and
-              lifestyle. Our hybrid learning model allows you to seamlessly
-              transition between online and offline classes based on your needs.
-              Enjoy the benefits of both worlds without compromise.<br />
-              Adaptive Education: We recognize that every learner has unique
-              needs. Our hybrid approach ensures adaptability, allowing you to
-              switch between online and offline classes as circumstances change.
-              This adaptability ensures that your educational journey remains
-              uninterrupted. At PEPS-TECH, we believe in providing diverse and
-              inclusive learning opportunities. Whether you thrive in a virtual
-              environment, prefer the structure of a physical classroom, or
-              desire a combination of both, we're here to support your
-              educational aspirations. Join us in embracing the versatility of
-              online and offline classes as we embark on a journey of knowledge,
-              growth, and lifelong learning.
-            </p>
-          </div>
-        </div>
-        <div class="training_section_three" data-aos="fade-up">
-          <div>
-            <h2>Learn Trending and Evergreen Courses</h2>
-            <p>
-              Our program consists of a few courses related to the most recent
-              advancements in information technology and software, such as
-              business intelligence and analytics, DevOps, cloud computing,
-              cloud integration, the internet of things, Matlab, Python, and
-              Java. Release Management and our highly skilled trainers
-              collaborated to generate exceptional training materials.
-            </p>
-          </div>
-          <img src="assets/studying-with-lap.jpg" alt="" width="500" />
-        </div>
-      </div>
-    </section>
-    <section class="service_section" data-aos="fade-up">
-      <h1>Services</h1>
-      <div class="service_list">
-        <div class="card">
-          <!-- <img src="assets/evimg.jpg" alt="Avatar" style="width: 100%" /> -->
-          <h3>Research Project</h3>
-          <div class="button">
-            <button>more</button>
-          </div>
-          <!-- <div class="container">
-            <h4><b>Electric Vehicle Charging</b></h4>
-          </div> -->
-        </div>
-        <div class="card">
-          <h3>Academic Main Project</h3>
-          <div class="button">
-            <button>more</button>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Academic Mini Project</h3>
-          <div class="button">
-            <button>more</button>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Training (sw/Courses)</h3>
-          <div class="button">
-            <button>more</button>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Resume Building</h3>
-          <div class="button">
-            <button>more</button>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Internship</h3>
-          <div class="button">
-            <button>more</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer data-aos="fade-up">
-      <section class="__footer">
-        <p>
-          Peps Tech is the best and unavoidable choice for IT Software Training,
-          Research & Development, and Student Projects. Our core curriculum and
-          study materials are consistently unique in the field. The trainers
-          have experienced MNC professionals who follow a corporate style of
-          training that focuses on practical sessions.
-        </p>
-        <div class="services">
-          <ul>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col gap-3 px-4 py-4 text-white font-medium bg-[#013554] rounded-lg mt-2 space-y-2"
+      >
+        <a
+          href="#home"
+          class="hover:text-pink-400 font-bold border-b-2 border-pink-400"
+          >Home</a
+        >
+        <a href="./about/" class="hover:text-pink-400">About Us</a>
+
+        <div>
+          <div class="font-semibold text-white">Projects</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">R&D Project</a></li>
             <li>
-              <h5>Services</h5>
+              <a href="#" class="hover:text-indigo-400">Academic Project</a>
             </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-semibold text-white">Services</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">Projects</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Trainings</a></li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Resume Building</a>
+            </li>
+            <li><a href="#" class="hover:text-indigo-400">Internship</a></li>
+          </ul>
+        </div>
+
+        <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+      </div>
+      <!-- Hero Section -->
+      <div
+        class="container mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-10"
+      >
+        <!-- Left Content -->
+        <div class="flex-1 text-center md:text-left text-white">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4"
+          >
+            FUTURE MAKER: <span class="text-pink-400">PEPS - TECH</span>
+          </h1>
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
+            Research and Development Company in Hosur
+          </h2>
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
+            Internship | Academic Projects | IT Training | Placement
+          </h2>
+          <p class="text-base sm:text-lg mb-3 italic">
+            Your Gateway to Industry-Ready Excellence
+          </p>
+          <p class="text-sm sm:text-base mb-4">
+            PEPS Tech is a leading Research & Development and Training company
+            in Hosur, offering hands-on learning, live projects, and expert
+            mentorship to help you build a successful career in IT and
+            Engineering.
+          </p>
+          <a
+            href="#courses"
+            class="mt-6 inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-lg shadow transition"
+          >
+            Get Started
+          </a>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex-1 flex justify-center">
+          <div class="bg-white/20 p-3 sm:p-4 rounded-xl shadow-lg">
+            <img
+              src="images/01d98a63-915e-4e9e-8098-d118cef3e431-removebg-preview.png"
+              alt="Hero"
+              class="w-64 sm:w-80 md:w-[24rem] lg:w-[30rem] h-auto object-contain scale-x-[-1]"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1">
+          <img
+            src="assets/women-studying.jpg"
+            alt="About PEPS Tech"
+            class="w-80 h-80 object-contain rounded-xl shadow-lg mx-auto"
+          />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-4">About PEPS Tech</h2>
+          <p class="text-gray-700 mb-4">
+            PEPS Tech is dedicated to bridging the gap between academia and
+            industry. We provide
+            <span class="font-semibold"
+              >Internships, Academic Projects, IT Training, Placement Support,
+              and R&D Services</span
+            >
+            for students and professionals. Our programs are designed to deliver
+            practical skills, industry exposure, and real project experience.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 mb-4">
+            <li>Live Project Internships for Engineering & Science Students</li>
+            <li>
+              Academic Project Guidance (B.E/B.Tech, M.E/M.Tech, Diploma, MSc,
+              BSc, MCA, BCA)
+            </li>
+            <li>
+              Corporate IT Training (Python, Java, Embedded, IoT, Data Science,
+              and more)
+            </li>
+            <li>Placement Assistance & Career Guidance</li>
+            <li>Research & Development Consultancy</li>
+          </ul>
+          <!-- <a
+            href="#contact"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg"
+            >Contact Us</a
+          > -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses/Services Section -->
+    <section id="courses" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-2">Our Services</h2>
+        <!-- <div class="flex justify-center gap-6 mb-8 flex-wrap">
+          <button
+            class="text-indigo-600 font-semibold border-b-2 border-indigo-600 px-2"
+          >
+            Internship
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Academic Projects
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            IT Training
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Placement
+          </button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">R&D</button>
+          <button class="text-gray-500 hover:text-indigo-600 px-2">
+            Research Projects
+          </button>
+        </div> -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/evimg.jpg"
+              alt="Internship"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Internship Programs</h3>
+            <p class="text-gray-600 mb-2">
+              Industry-oriented internships with live projects, mentorship, and
+              certification for Engineering, Science, and Diploma students.
+            </p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">Apply Now</span>
+              <a
+                href="#contact"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/DataScience.jpg"
+              alt="Academic Projects"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Academic Projects</h3>
+            <p class="text-gray-600 mb-2">
+              Guidance and support for B.E/B.Tech, M.E/M.Tech, Diploma, MSc,
+              BSc, MCA, BCA projects in latest domains.
+            </p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">Get Started</span>
+              <a
+                href="#contact"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/IOT.jpg"
+              alt="IT Training"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">IT Training</h3>
+            <p class="text-gray-600 mb-2">
+              Corporate-style training in Python, Java, Embedded, IoT, Data
+              Science, Web, and more. Hands-on, job-focused learning.
+            </p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">Join Now</span>
+              <a
+                href="#contact"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/studying-with-lap.jpg"
+              alt="Placement"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Placement & Career</h3>
+            <p class="text-gray-600 mb-2">
+              Placement support, resume building, interview preparation, and
+              career guidance for students and professionals.
+            </p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">Get Placed</span>
+              <a
+                href="#contact"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <!-- Research Projects Card -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+            <img
+              src="assets/research-project.jpg"
+              alt="Research Projects"
+              class="rounded-lg mb-4 h-40 w-full object-cover"
+            />
+            <h3 class="font-bold text-lg mb-1">Research Projects</h3>
+            <p class="text-gray-600 mb-2">
+              End-to-end support for R&D and innovation projects, including
+              proposal, design, development, and publication for students,
+              scholars, and professionals.
+            </p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="font-bold text-indigo-600">Start Research</span>
+              <a
+                href="#contact"
+                class="text-sm text-pink-500 font-semibold hover:underline"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Why Choose PEPS Tech?
+        </h2>
+        <p class="text-center text-gray-500 mb-10 max-w-2xl mx-auto">
+          We are committed to delivering the best learning and career outcomes
+          for our students and partners.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-person-badge"></i>
+            </div>
+            <h4 class="font-bold mb-1">Expert Trainers</h4>
+            <p class="text-gray-500 text-sm">
+              Learn from experienced professionals with real industry exposure.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h4 class="font-bold mb-1">Live Projects</h4>
+            <p class="text-gray-500 text-sm">
+              Work on real-time projects and gain practical skills that
+              employers value.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-award"></i>
+            </div>
+            <h4 class="font-bold mb-1">Certification</h4>
+            <p class="text-gray-500 text-sm">
+              Earn recognized certificates to boost your resume and career
+              prospects.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <h4 class="font-bold mb-1">Placement Support</h4>
+            <p class="text-gray-500 text-sm">
+              Get placement assistance, resume building, and interview
+              preparation.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="46"
+                fill="currentColor"
+                class="bi bi-infinity"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916z"
+                />
+              </svg>
+            </div>
+            <h4 class="font-bold mb-1">Lifetime Access</h4>
+            <p class="text-gray-500 text-sm">
+              Access course materials and resources anytime, anywhere.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="text-indigo-600 text-4xl mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="46"
+                fill="currentColor"
+                class="bi bi-cash-coin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"
+                />
+                <path
+                  d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"
+                />
+                <path
+                  d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"
+                />
+                <path
+                  d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"
+                />
+              </svg>
+            </div>
+            <h4 class="font-bold mb-1">Affordable Fees</h4>
+            <p class="text-gray-500 text-sm">
+              Quality training and services at competitive prices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          What Our Students Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="assets/women-studying.jpg"
+              alt="Student"
+              class="w-20 h-20 rounded-full mb-4 object-cover"
+            />
+            <p class="text-gray-600 mb-2">
+              "The internship at PEPS Tech gave me real project experience and
+              helped me get placed in a top MNC."
+            </p>
+            <span class="font-bold text-indigo-600">- Priya S, B.E. CSE</span>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="assets/evimg.jpg"
+              alt="Student"
+              class="w-20 h-20 rounded-full mb-4 object-cover"
+            />
+            <p class="text-gray-600 mb-2">
+              "Excellent trainers and hands-on sessions. The academic project
+              support was outstanding!"
+            </p>
+            <span class="font-bold text-indigo-600"
+              >- Karthik R, M.E. Embedded</span
+            >
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="assets/studying-with-lap.jpg"
+              alt="Student"
+              class="w-20 h-20 rounded-full mb-4 object-cover"
+            />
+            <p class="text-gray-600 mb-2">
+              "PEPS Tech's placement training and resume building helped me
+              start my IT career with confidence."
+            </p>
+            <span class="font-bold text-indigo-600">- Anitha M, MCA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-white">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1">
+          <img
+            src="assets/studying-with-lap.jpg"
+            alt="Newsletter"
+            class="w-80 h-80 object-contain rounded-xl shadow-lg mx-auto"
+          />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-4">Subscribe to our newsletter</h2>
+          <p class="text-gray-500 mb-6">
+            Get the latest updates, news, and articles delivered straight to
+            your inbox.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              placeholder="Enter your mail"
+              class="border border-gray-300 rounded-lg px-4 py-2 flex-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg"
+            >
+              Join Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="font-bold text-xl mb-2">PEPS-TECH</div>
+          <p class="text-gray-400 text-sm mb-4">
+            Peps Tech is the best and unavoidable choice for IT Software
+            Training, Research & Development, and Student Projects. Our core
+            curriculum and study materials are consistently unique in the field.
+            The trainers have experienced MNC professionals who follow a
+            corporate style of training that focuses on practical sessions.
+          </p>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-facebook text-2xl"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-instagram text-2xl"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-youtube text-2xl"></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/company/peps-tech"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-linkedin text-2xl"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-whatsapp text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Services</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
             <li>R & D Projects</li>
             <li>Software Trainings</li>
             <li>Final Year Projects</li>
@@ -239,68 +613,55 @@
             <li>Internship</li>
           </ul>
         </div>
-        <div class="contacts">
-          <ul>
-            <li>
-              <h5>Contacts</h5>
-            </li>
+        <div>
+          <h5 class="font-bold mb-2">Contacts</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
             <li>peps-tech@outlook.com</li>
             <li>+91-9944002795</li>
           </ul>
         </div>
-        <div class="address">
-          <ul>
-            <li>
-              <h5>Address</h5>
-            </li>
+        <div>
+          <h5 class="font-bold mb-2">Address</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
             <li>HiG 52A 2nd Floor,</li>
             <li>7th Cross Santhinikethan,</li>
             <li>Old ASTC Hudco</li>
-            <li>Hosur,TamilNadu</li>
+            <li>Hosur, TamilNadu</li>
             <li>635109.</li>
           </ul>
         </div>
-        <section class="social">
-          <a
-            href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
-            target="_blank"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
-            target="_blank"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
-            target="_blank"
-            ><i class="bi bi-youtube"></i
-          ></a>
-          <a href="https://in.linkedin.com/company/peps-tech" target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a
-            href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
-            target="_blank"
-            ><i class="bi bi-whatsapp"></i
-          ></a>
-        </section>
-        <section class="__copyright">
-          <p>
-            © 2022 - <span id="year"></span> Copyright:
-            <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
-          </p>
-        </section>
-      </section>
+      </div>
+      <div class="text-center text-gray-500 text-xs mt-8">
+        © 2022 - <span id="year"></span> Copyright:
+        <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
+      </div>
     </footer>
-    <button class="scroll-top scroll-to-target" data-target="html">
-      <!-- <i class="bi bi-arrow-up svg-color"></i> -->
-      <i class="bi bi-chevron-up svg-color"></i>
-      <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-10 right-10 z-50 bg-indigo-600 hover:bg-pink-500 text-white rounded-full p-3 shadow-lg transition-opacity opacity-0 pointer-events-none"
+    >
+      <i class="bi bi-chevron-up text-2xl leading-4"></i>
     </button>
-    <script src="scripts.js"></script>
     <script>
-      AOS.init();
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Scroll to top button logic
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollTopBtn.classList.remove("opacity-0", "pointer-events-none");
+        } else {
+          scrollTopBtn.classList.add("opacity-0", "pointer-events-none");
+        }
+      });
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
     </script>
   </body>
 </html>

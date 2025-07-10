@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research & Development | PEPS Tech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header & Nav -->
+    <header
+      class="bg-gradient-to-r from-[#013554] to-[#8b5cf6] rounded-br-[10%] md:rounded-br-[15em] h-auto pb-16 md:pb-32"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 pt-10 flex items-center justify-between"
+      >
+        <div class="font-bold text-white text-xl sm:text-2xl tracking-wide">
+          <img src="./assets/logo.png" alt="Peps" width="200" />
+        </div>
+        <nav
+          class="hidden md:flex gap-6 lg:gap-8 items-center text-white font-medium text-sm lg:text-base"
+        >
+          <a href="index.html#home" class="hover:text-pink-400">Home</a>
+          <a href="./about.html" class="hover:text-pink-400">About Us</a>
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Projects
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-40 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li>
+                  <a
+                    href="./research-and-development.html"
+                    class="hover:text-indigo-600 font-bold"
+                    >R&D Project</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./academic-project.html"
+                    class="hover:text-indigo-600"
+                    >Academic Project</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative group flex items-center">
+            <button
+              class="hover:text-pink-400 focus:outline-none flex items-center gap-1"
+            >
+              Services
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-48 z-20 left-0 top-full"
+            >
+              <ul class="flex flex-col py-2 px-4 space-y-1">
+                <li><a href="#" class="hover:text-indigo-600">Projects</a></li>
+                <li><a href="#" class="hover:text-indigo-600">Trainings</a></li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Resume Building</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-indigo-600">Internship</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+        </nav>
+        <button class="md:hidden text-white text-3xl" id="menu-toggle">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col gap-3 px-4 py-4 text-white font-medium bg-[#013554] rounded-lg mt-2 space-y-2"
+      >
+        <a href="index.html#home" class="hover:text-pink-400">Home</a>
+        <a href="./about.html" class="hover:text-pink-400">About Us</a>
+        <div>
+          <div class="font-semibold text-white">Projects</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li>
+              <a
+                href="./research-and-development.html"
+                class="hover:text-indigo-400 font-bold"
+                >R&D Project</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Academic Project</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold text-white">Services</div>
+          <ul class="pl-4 space-y-1 text-sm">
+            <li><a href="#" class="hover:text-indigo-400">Projects</a></li>
+            <li><a href="#" class="hover:text-indigo-400">Trainings</a></li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Resume Building</a>
+            </li>
+            <li><a href="#" class="hover:text-indigo-400">Internship</a></li>
+          </ul>
+        </div>
+        <a href="./blog.html" class="hover:text-pink-400">Blog</a>
+      </div>
+      <!-- R&D Hero -->
+      <div
+        class="container mx-auto px-4 py-16 flex flex-col items-center text-center text-white"
+      >
+        <h1 class="text-5xl font-extrabold mb-4">Research & Development</h1>
+        <p class="text-xl max-w-2xl mb-6">
+          Driving innovation and excellence through advanced research, industry
+          collaboration, and real-world solutions.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <!-- R&D Introduction -->
+      <section class="py-16 bg-white">
+        <div
+          class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1">
+            <img
+              src="assets/rd-lab.jpg"
+              alt="R&D Lab"
+              class="w-80 h-80 object-contain rounded-xl shadow-lg mx-auto"
+            />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-4">Our R&D Philosophy</h2>
+            <p class="text-gray-700 mb-4">
+              At PEPS Tech, Research & Development is at the heart of everything
+              we do. Our dedicated R&D division is committed to exploring
+              emerging technologies, solving real-world problems, and delivering
+              innovative solutions for industry and academia.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600 mb-4">
+              <li>
+                Cutting-edge research in Electric Vehicles, IoT, Embedded
+                Systems, and AI/ML
+              </li>
+              <li>
+                Collaboration with industry leaders and academic institutions
+              </li>
+              <li>
+                Development of prototypes, proof-of-concepts, and commercial
+                products
+              </li>
+              <li>Guidance for academic research, publications, and patents</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- R&D Focus Areas -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Our Focus Areas</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-lightning-charge"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-bold mb-1">Electric Vehicles</h4>
+              <p class="text-gray-500 text-sm">
+                EV powertrains, battery management, charging infrastructure, and
+                motor control systems.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h4 class="font-bold mb-1">Embedded & IoT</h4>
+              <p class="text-gray-500 text-sm">
+                Smart devices, sensor networks, automation, and real-time
+                embedded solutions.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-robot"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"
+                  />
+                  <path
+                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"
+                  />
+                </svg>
+              </div>
+              <h4 class="font-bold mb-1">AI & Machine Learning</h4>
+              <p class="text-gray-500 text-sm">
+                Predictive analytics, computer vision, and intelligent
+                automation for industry and research.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+            >
+              <div class="text-indigo-600 text-4xl mb-2">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h4 class="font-bold mb-1">Industry 4.0</h4>
+              <p class="text-gray-500 text-sm">
+                Smart manufacturing, digital twins, and industrial automation
+                for the next generation of factories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- R&D Services -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">What We Offer</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="text-xl font-bold mb-4 text-indigo-600">
+                For Industry
+              </h3>
+              <ul class="space-y-3 text-gray-700">
+                <li>• Custom R&D projects and technology consulting</li>
+                <li>• Prototype development and product engineering</li>
+                <li>• Technology transfer and IP support</li>
+                <li>• Workforce upskilling and technical workshops</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="text-xl font-bold mb-4 text-indigo-600">
+                For Academia
+              </h3>
+              <ul class="space-y-3 text-gray-700">
+                <li>• Research project guidance and mentorship</li>
+                <li>• Support for publications and patents</li>
+                <li>• Sponsored projects and internships</li>
+                <li>• Hands-on training in advanced technologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- R&D Achievements -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            Our R&D Achievements
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">20+</div>
+              <p class="text-gray-600">Patents & Publications</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">50+</div>
+              <p class="text-gray-600">Industry Projects</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">100+</div>
+              <p class="text-gray-600">Academic Projects Guided</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">10+</div>
+              <p class="text-gray-600">Collaborative Partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- R&D Collaboration -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+          <h2 class="text-3xl font-bold mb-4">Collaborate With Us</h2>
+          <p class="text-gray-700 mb-6">
+            Whether you are an industry leader, academic institution, or an
+            aspiring researcher, PEPS Tech welcomes collaboration for joint
+            research, technology development, and innovation. Let's build the
+            future together!
+          </p>
+          <a
+            href="mailto:peps-tech@gmail.com"
+            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-lg shadow transition"
+            >Contact Our R&D Team</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="font-bold text-xl mb-2">PEPS-TECH</div>
+          <p class="text-gray-400 text-sm mb-4">
+            Peps Tech is the best and unavoidable choice for IT Software
+            Training, Research & Development, and Student Projects. Our core
+            curriculum and study materials are consistently unique in the field.
+            The trainers have experienced MNC professionals who follow a
+            corporate style of training that focuses on practical sessions.
+          </p>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-facebook text-2xl"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-instagram text-2xl"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-youtube text-2xl"></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/company/peps-tech"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-linkedin text-2xl"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+              ><i class="bi bi-whatsapp text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Services</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>R & D Projects</li>
+            <li>Software Trainings</li>
+            <li>Final Year Projects</li>
+            <li>Mini Project</li>
+            <li>Resume Building</li>
+            <li>Internship</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Contacts</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>peps-tech@outlook.com</li>
+            <li>+91-9944002795</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Address</h5>
+          <ul class="text-gray-400 text-sm space-y-1">
+            <li>HiG 52A 2nd Floor,</li>
+            <li>7th Cross Santhinikethan,</li>
+            <li>Old ASTC Hudco</li>
+            <li>Hosur, TamilNadu</li>
+            <li>635109.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-xs mt-8">
+        © 2022 - <span id="year"></span> Copyright:
+        <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
+      </div>
+    </footer>
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 z-50 bg-indigo-600 hover:bg-pink-500 text-white rounded-full p-3 shadow-lg transition-opacity opacity-0 pointer-events-none"
+    >
+      <i class="bi bi-chevron-up text-2xl leading-4"></i>
+    </button>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Scroll to top button logic
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollTopBtn.classList.remove("opacity-0", "pointer-events-none");
+        } else {
+          scrollTopBtn.classList.add("opacity-0", "pointer-events-none");
+        }
+      });
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
