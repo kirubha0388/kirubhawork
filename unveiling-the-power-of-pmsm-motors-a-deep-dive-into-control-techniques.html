@@ -1,208 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLOG | PEPS-TECH</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="blog__post__header">
-        <nav class="about__nav">
-            <div class="logo">
-                <div class="logo_menu">
-                    <img src="./assets/logo.png" alt="Peps" width="200" />
-                </div>
-                <div class="menu_icon">
-                    <i class="bi bi-list" style="color: #fff; font-size: 2em" onclick="show()"></i>
-                </div>
+      <nav class="about__nav">
+        <div class="logo">
+          <div class="logo_menu">
+            <img src="./assets/logo.png" alt="Peps" width="200" />
+          </div>
+          <div class="menu_icon">
+            <i
+              class="bi bi-list"
+              style="color: #fff; font-size: 2em"
+              onclick="show()"
+            ></i>
+          </div>
+        </div>
+        <ul id="navList">
+          <i
+            class="bi bi-x"
+            style="color: #fff; font-size: 2em"
+            onclick="hide()"
+          ></i>
+          <li class="nav-link"><a href="./index.html">Home </a></li>
+          <li class="nav-link"><a href="./about.html">About Us</a></li>
+          <li class="projects nav-link">
+            <a class="main_project" id="projectsLink">Projects</a>
+            <div class="projects_dropdown">
+              <ul>
+                <li><a href="">R&D Project</a></li>
+                <li><a href="">Academic Project</a></li>
+              </ul>
             </div>
-            <ul id="navList">
-                <i class="bi bi-x" style="color: #fff; font-size: 2em" onclick="hide()"></i>
-                <li class="nav-link"><a href="./index.html">Home
-                    </a>
-                </li>
-                <li class="nav-link"><a href="./about.html">About Us</a></li>
-                <li class="projects nav-link">
-                    <a class="main_project" id="projectsLink">Projects</a>
-                    <div class="projects_dropdown">
-                        <ul>
-                            <li><a href="">R&D Project</a></li>
-                            <li><a href="">Academic Project</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="service nav-link">
-                    <a class="main_service" id="serviceLink">Services</a>
-                    <div class="services_dropdown">
-                        <ul>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Trainings</a></li>
-                            <li><a href="">Resume Building</a></li>
-                            <li><a href="">Internship</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="blog nav-link">
-                    <a href="#" class="selected">Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <section class="about__head">
+          </li>
+          <li class="service nav-link">
+            <a class="main_service" id="serviceLink">Services</a>
+            <div class="services_dropdown">
+              <ul>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Trainings</a></li>
+                <li><a href="">Resume Building</a></li>
+                <li><a href="">Internship</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="blog nav-link">
+            <a href="#" class="selected">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <section class="about__head">
             <h1>Blog</h1>
         </section> -->
     </section>
     <section class="blog_post_content">
-        <div class="blog_post_main">
-            <h1>Unveiling the Power of PMSM Motors: A Deep Dive into Control Techniques</h1>
-            <h4 class="introduction"><strong>Introduction:</strong></h4>
-            <p>Permanent Magnet Synchronous Motors (PMSM) have become integral components in various industrial
-                applications due to their efficiency, reliability, and precise control capabilities. In this blog post,
-                we will explore the fascinating world of PMSM motors, delving into their fundamental principles and the
-                advanced control techniques that make them a preferred choice in modern engineering.</p>
+      <div class="blog_post_main">
+        <h1>
+          Unveiling the Power of PMSM Motors: A Deep Dive into Control
+          Techniques
+        </h1>
+        <h4 class="introduction"><strong>Introduction:</strong></h4>
+        <p>
+          Permanent Magnet Synchronous Motors (PMSM) have become integral
+          components in various industrial applications due to their efficiency,
+          reliability, and precise control capabilities. In this blog post, we
+          will explore the fascinating world of PMSM motors, delving into their
+          fundamental principles and the advanced control techniques that make
+          them a preferred choice in modern engineering.
+        </p>
 
-            <h2 class="introduction">1. Understanding PMSM Motors</h2>
+        <h2 class="introduction">1. Understanding PMSM Motors</h2>
 
-            <p><strong>1.1 What Sets PMSM Motors Apart? </strong>PMSM motors feature permanent magnets on the rotor,
-                eliminating the need for field winding. This design choice enhances efficiency and reduces the motor's
-                overall size and weight.</p>
+        <p>
+          <strong>1.1 What Sets PMSM Motors Apart? </strong>PMSM motors feature
+          permanent magnets on the rotor, eliminating the need for field
+          winding. This design choice enhances efficiency and reduces the
+          motor's overall size and weight.
+        </p>
 
-            <p class="second_section_para"><strong>1.2 Working Principles of PMSM Motors </strong>Explore the
-                fundamental operating principles of PMSM motors, including the interaction between stator and rotor
-                magnetic fields, and the role of permanent magnets in generating torque.</p>
+        <p class="second_section_para">
+          <strong>1.2 Working Principles of PMSM Motors </strong>Explore the
+          fundamental operating principles of PMSM motors, including the
+          interaction between stator and rotor magnetic fields, and the role of
+          permanent magnets in generating torque.
+        </p>
 
-            <h2>2. PMSM Motor Control Techniques</h2>
-            <p><strong>2.1 Field-Oriented Control (FOC) </strong>Field-Oriented Control is a widely used technique that
-                enables precise control of PMSM motors by aligning the magnetic field with the rotor flux. Understand
-                the principles behind FOC and its advantages in achieving high-performance motor control.</p>
+        <h2>2. PMSM Motor Control Techniques</h2>
+        <p>
+          <strong>2.1 Field-Oriented Control (FOC) </strong>Field-Oriented
+          Control is a widely used technique that enables precise control of
+          PMSM motors by aligning the magnetic field with the rotor flux.
+          Understand the principles behind FOC and its advantages in achieving
+          high-performance motor control.
+        </p>
 
-            <p class="second_section_para">
-                <strong>2.2 Direct Torque Control (DTC) </strong>
-                DTC is another prominent control technique that focuses on directly controlling torque and flux in PMSM
-                motors. Learn about the benefits of DTC, including faster response times and reduced sensitivity to
-                motor parameters.
-            </p>
+        <p class="second_section_para">
+          <strong>2.2 Direct Torque Control (DTC) </strong>
+          DTC is another prominent control technique that focuses on directly
+          controlling torque and flux in PMSM motors. Learn about the benefits
+          of DTC, including faster response times and reduced sensitivity to
+          motor parameters.
+        </p>
 
-            <p class="second_section_para">
-                <strong>2.3 Model Predictive Control (MPC) for PMSM Motors </strong>
-                Explore the principles of Model Predictive Control and its application in PMSM motors. MPC offers
-                advantages in terms of dynamic performance and robustness, making it an attractive option for certain
-                applications.
-            </p>
+        <p class="second_section_para">
+          <strong>2.3 Model Predictive Control (MPC) for PMSM Motors </strong>
+          Explore the principles of Model Predictive Control and its application
+          in PMSM motors. MPC offers advantages in terms of dynamic performance
+          and robustness, making it an attractive option for certain
+          applications.
+        </p>
 
-            <h2 class="introduction">3. Challenges and Solutions in PMSM Control </h2>
+        <h2 class="introduction">
+          3. Challenges and Solutions in PMSM Control
+        </h2>
 
-            <p><strong>3.1 Sensorless Control </strong>Discuss the challenges associated with sensorless control in PMSM
-                motors and explore advanced algorithms and techniques used to estimate rotor position and speed without
-                the need for additional sensors.</p>
+        <p>
+          <strong>3.1 Sensorless Control </strong>Discuss the challenges
+          associated with sensorless control in PMSM motors and explore advanced
+          algorithms and techniques used to estimate rotor position and speed
+          without the need for additional sensors.
+        </p>
 
-            <p class="second_section_para">
-                <strong>3.2 Overcoming Saturation and Nonlinearities </strong>
-                Address the challenges of motor saturation and nonlinearities in PMSM control and discuss methods to
-                mitigate these issues, ensuring stable and efficient motor operation.
-            </p>
+        <p class="second_section_para">
+          <strong>3.2 Overcoming Saturation and Nonlinearities </strong>
+          Address the challenges of motor saturation and nonlinearities in PMSM
+          control and discuss methods to mitigate these issues, ensuring stable
+          and efficient motor operation.
+        </p>
 
+        <h2 class="introduction">4. Applications of PMSM Motors</h2>
 
-            <h2 class="introduction">4. Applications of PMSM Motors</h2>
+        <p>
+          <strong>4.1 Automotive Industry </strong>Explore the role of PMSM
+          motors in electric vehicles (EVs) and hybrid vehicles, emphasizing
+          their contribution to improved energy efficiency and reduced carbon
+          emissions.
+        </p>
 
-            <p><strong>4.1 Automotive Industry </strong>Explore the role of PMSM motors in electric vehicles (EVs) and
-                hybrid vehicles, emphasizing their contribution to improved energy efficiency and reduced carbon
-                emissions.</p>
+        <p class="second_section_para">
+          <strong>4.2 Industrial Automation </strong>
+          Discuss how PMSM motors are applied in industrial automation,
+          robotics, and other high-precision applications, highlighting their
+          role in enhancing productivity and accuracy.
+        </p>
 
-            <p class="second_section_para">
-                <strong>4.2 Industrial Automation </strong>
-                Discuss how PMSM motors are applied in industrial automation, robotics, and other high-precision
-                applications, highlighting their role in enhancing productivity and accuracy.
-            </p>
+        <h2 class="introduction">Conclusion:</h2>
 
-            <h2 class="introduction">Conclusion: </h2>
-
-            <p>As we conclude our journey into the realm of PMSM motors and their control techniques, it's clear that
-                these motors play a pivotal role in shaping the future of electric propulsion and automation. The
-                ongoing research and innovations in control techniques continue to push the boundaries, unlocking new
-                possibilities for efficiency, performance, and sustainability in various industries.</p>
-            <div>
-                <img src="./assets/11062b_1e29168be24244e2bb9b1c8ad33e137a~mv2.jpg" alt="" width="100%"
-                    style="height: 100vh;object-fit: cover;">
-            </div>
+        <p>
+          As we conclude our journey into the realm of PMSM motors and their
+          control techniques, it's clear that these motors play a pivotal role
+          in shaping the future of electric propulsion and automation. The
+          ongoing research and innovations in control techniques continue to
+          push the boundaries, unlocking new possibilities for efficiency,
+          performance, and sustainability in various industries.
+        </p>
+        <div>
+          <img
+            src="./assets/11062b_1e29168be24244e2bb9b1c8ad33e137a~mv2.jpg"
+            alt=""
+            width="100%"
+            style="height: 100vh; object-fit: cover"
+          />
         </div>
+      </div>
     </section>
     <footer>
-        <section class=" __footer" data-aos="fade-up">
-            <p>
-                Peps Tech is the best and unavoidable choice for IT Software Training,
-                Research & Development, and Student Projects. Our core curriculum and
-                study materials are consistently unique in the field. The trainers
-                have experienced MNC professionals who follow a corporate style of
-                training that focuses on practical sessions.
-            </p>
-            <div class="services">
-                <ul>
-                    <li>
-                        <h5>Services</h5>
-                    </li>
-                    <li>R & D Projects</li>
-                    <li>Software Trainings</li>
-                    <li>Final Year Projects</li>
-                    <li>Mini Project</li>
-                    <li>Resume Building</li>
-                    <li>Internship</li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <ul>
-                    <li>
-                        <h5>Contacts</h5>
-                    </li>
-                    <li>peps-tech@outlook.com</li>
-                    <li>+91-9944002795</li>
-                </ul>
-            </div>
-            <div class="address">
-                <ul>
-                    <li>
-                        <h5>Address</h5>
-                    </li>
-                    <li>HiG 52A 2nd Floor,</li>
-                    <li>7th Cross Santhinikethan,</li>
-                    <li>Old ASTC Hudco</li>
-                    <li>Hosur,TamilNadu</li>
-                    <li>635109.</li>
-                </ul>
-            </div>
-            <section class="social">
-                <a href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/" target="_blank"><i
-                        class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg" target="_blank"><i
-                        class="bi bi-youtube"></i></a>
-                <a href="https://in.linkedin.com/company/peps-tech" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0" target="_blank"><i
-                        class="bi bi-whatsapp"></i></a>
-            </section>
-            <section class="__copyright">
-                <p>
-                    © 2022 - <span id="year"></span> Copyright:
-                    <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
-                </p>
-            </section>
+      <section class="__footer" data-aos="fade-up">
+        <p>
+          Peps Tech is the best and unavoidable choice for IT Software Training,
+          Research & Development, and Student Projects. Our core curriculum and
+          study materials are consistently unique in the field. The trainers
+          have experienced MNC professionals who follow a corporate style of
+          training that focuses on practical sessions.
+        </p>
+        <div class="services">
+          <ul>
+            <li>
+              <h5>Services</h5>
+            </li>
+            <li>R & D Projects</li>
+            <li>Software Trainings</li>
+            <li>Final Year Projects</li>
+            <li>Mini Project</li>
+            <li>Resume Building</li>
+            <li>Internship</li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <ul>
+            <li>
+              <h5>Contacts</h5>
+            </li>
+            <li>peps-tech@outlook.com</li>
+            <li>+91-9944002795</li>
+          </ul>
+        </div>
+        <div class="address">
+          <ul>
+            <li>
+              <h5>Address</h5>
+            </li>
+            <li>HiG 52A 2nd Floor,</li>
+            <li>7th Cross Santhinikethan,</li>
+            <li>Old ASTC Hudco</li>
+            <li>Hosur,TamilNadu</li>
+            <li>635109.</li>
+          </ul>
+        </div>
+        <section class="social">
+          <a
+            href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
+            target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
+            target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="https://in.linkedin.com/company/peps-tech" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
+            target="_blank"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
         </section>
+        <section class="__copyright">
+          <p>
+            © 2022 - <span id="year"></span> Copyright:
+            <a class="text-white" href="https://peps-tech.com/"
+              >peps-tech.com</a
+            >
+          </p>
+        </section>
+      </section>
     </footer>
     <button class="scroll-top scroll-to-target" data-target="html">
-        <!-- <i class="bi bi-arrow-up svg-color"></i> -->
-        <i class="bi bi-chevron-up svg-color"></i>
-        <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
+      <!-- <i class="bi bi-arrow-up svg-color"></i> -->
+      <i class="bi bi-chevron-up svg-color"></i>
+      <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
     </button>
     <script src="scripts.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>

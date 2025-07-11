@@ -1,195 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLOG | PEPS-TECH</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="blog__post__header">
-        <nav class="about__nav">
-            <div class="logo">
-                <div class="logo_menu">
-                    <img src="./assets/logo.png" alt="Peps" width="200" />
-                </div>
-                <div class="menu_icon">
-                    <i class="bi bi-list" style="color: #fff; font-size: 2em" onclick="show()"></i>
-                </div>
+      <nav class="about__nav">
+        <div class="logo">
+          <div class="logo_menu">
+            <img src="./assets/logo.png" alt="Peps" width="200" />
+          </div>
+          <div class="menu_icon">
+            <i
+              class="bi bi-list"
+              style="color: #fff; font-size: 2em"
+              onclick="show()"
+            ></i>
+          </div>
+        </div>
+        <ul id="navList">
+          <i
+            class="bi bi-x"
+            style="color: #fff; font-size: 2em"
+            onclick="hide()"
+          ></i>
+          <li class="nav-link"><a href="./index.html">Home </a></li>
+          <li class="nav-link"><a href="./about.html">About Us</a></li>
+          <li class="projects nav-link">
+            <a class="main_project" id="projectsLink">Projects</a>
+            <div class="projects_dropdown">
+              <ul>
+                <li><a href="">R&D Project</a></li>
+                <li><a href="">Academic Project</a></li>
+              </ul>
             </div>
-            <ul id="navList">
-                <i class="bi bi-x" style="color: #fff; font-size: 2em" onclick="hide()"></i>
-                <li class="nav-link"><a href="./index.html">Home
-                    </a>
-                </li>
-                <li class="nav-link"><a href="./about.html">About Us</a></li>
-                <li class="projects nav-link">
-                    <a class="main_project" id="projectsLink">Projects</a>
-                    <div class="projects_dropdown">
-                        <ul>
-                            <li><a href="">R&D Project</a></li>
-                            <li><a href="">Academic Project</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="service nav-link">
-                    <a class="main_service" id="serviceLink">Services</a>
-                    <div class="services_dropdown">
-                        <ul>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Trainings</a></li>
-                            <li><a href="">Resume Building</a></li>
-                            <li><a href="">Internship</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="blog nav-link">
-                    <a href="#" class="selected">Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <section class="about__head">
+          </li>
+          <li class="service nav-link">
+            <a class="main_service" id="serviceLink">Services</a>
+            <div class="services_dropdown">
+              <ul>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Trainings</a></li>
+                <li><a href="">Resume Building</a></li>
+                <li><a href="">Internship</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="blog nav-link">
+            <a href="#" class="selected">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <section class="about__head">
             <h1>Blog</h1>
         </section> -->
     </section>
     <section class="blog_post_content">
-        <div class="blog_post_main">
-            <h1>Mastering BLDC Motor Control Techniques: A Comprehensive Guide</h1>
-            <h4 class="introduction"><em>Introduction:</em></h4>
-            <p>Brushless DC (BLDC) motors have become integral to countless applications, from electric vehicles to
-                industrial automation. The efficiency and performance of these motors are greatly influenced by the
-                control techniques employed. In this guide, we'll explore various BLDC motor control techniques,
-                shedding light on their principles, advantages, and applications.</p>
+      <div class="blog_post_main">
+        <h1>Mastering BLDC Motor Control Techniques: A Comprehensive Guide</h1>
+        <h4 class="introduction"><em>Introduction:</em></h4>
+        <p>
+          Brushless DC (BLDC) motors have become integral to countless
+          applications, from electric vehicles to industrial automation. The
+          efficiency and performance of these motors are greatly influenced by
+          the control techniques employed. In this guide, we'll explore various
+          BLDC motor control techniques, shedding light on their principles,
+          advantages, and applications.
+        </p>
 
-            <h2 class="introduction">1. Trapezoidal Commutation</h2>
+        <h2 class="introduction">1. Trapezoidal Commutation</h2>
 
-            <p><em>1.1 Basic Commutation Strategy : </em>Trapezoidal commutation is a fundamental technique for BLDC
-                motor control. It involves energizing two adjacent stator windings at a time, creating a trapezoidal
-                back electromotive force (EMF) waveform. This approach offers simplicity and efficiency in controlling
-                the motor.</p>
+        <p>
+          <em>1.1 Basic Commutation Strategy : </em>Trapezoidal commutation is a
+          fundamental technique for BLDC motor control. It involves energizing
+          two adjacent stator windings at a time, creating a trapezoidal back
+          electromotive force (EMF) waveform. This approach offers simplicity
+          and efficiency in controlling the motor.
+        </p>
 
-            <h2>2. Sinusoidal Commutation</h2>
-            <p><em>2.1 Smooth and Precise Control : </em>Sinusoidal commutation takes BLDC motor control to the next
-                level by generating a sinusoidal back EMF waveform. This technique optimally aligns with the motor's
-                magnetic field, resulting in smoother operation and reduced torque ripple. The advantage lies in
-                delivering torque more smoothly.</p>
+        <h2>2. Sinusoidal Commutation</h2>
+        <p>
+          <em>2.1 Smooth and Precise Control : </em>Sinusoidal commutation takes
+          BLDC motor control to the next level by generating a sinusoidal back
+          EMF waveform. This technique optimally aligns with the motor's
+          magnetic field, resulting in smoother operation and reduced torque
+          ripple. The advantage lies in delivering torque more smoothly.
+        </p>
 
-            <h2 class="introduction">3. Field-Oriented Control (FOC)</h2>
+        <h2 class="introduction">3. Field-Oriented Control (FOC)</h2>
 
-            <p><em>3.1 Precision in Control : </em>Field-Oriented Control (FOC) treats the stator and rotor magnetic
-                fields independently. This method allows for precise control of torque and speed, enhancing efficiency
-                and dynamic performance. FOC is particularly useful when precision control is paramount.</p>
+        <p>
+          <em>3.1 Precision in Control : </em>Field-Oriented Control (FOC)
+          treats the stator and rotor magnetic fields independently. This method
+          allows for precise control of torque and speed, enhancing efficiency
+          and dynamic performance. FOC is particularly useful when precision
+          control is paramount.
+        </p>
 
-            <h2 class="introduction">4. Direct Torque Control (DTC)</h2>
+        <h2 class="introduction">4. Direct Torque Control (DTC)</h2>
 
-            <p><em>4.1 Instantaneous Torque Control : </em>Direct Torque Control (DTC) directly regulates torque and
-                flux by selecting the optimal voltage vectors. This approach provides rapid torque response and is less
-                sensitive to motor parameters. It excels in situations requiring instantaneous torque adjustments.</p>
+        <p>
+          <em>4.1 Instantaneous Torque Control : </em>Direct Torque Control
+          (DTC) directly regulates torque and flux by selecting the optimal
+          voltage vectors. This approach provides rapid torque response and is
+          less sensitive to motor parameters. It excels in situations requiring
+          instantaneous torque adjustments.
+        </p>
 
-            <h2 class="introduction">5. Sensorless Control Techniques</h2>
+        <h2 class="introduction">5. Sensorless Control Techniques</h2>
 
-            <p><em>5.1 Eliminating Position Sensors : </em>Sensorless BLDC motor control eliminates the need for Hall
-                Effect sensors or encoders. Techniques like back EMF sensing and observer-based methods estimate rotor
-                position, reducing system complexity and cost. This is advantageous in applications where reducing
-                components is crucial.</p>
+        <p>
+          <em>5.1 Eliminating Position Sensors : </em>Sensorless BLDC motor
+          control eliminates the need for Hall Effect sensors or encoders.
+          Techniques like back EMF sensing and observer-based methods estimate
+          rotor position, reducing system complexity and cost. This is
+          advantageous in applications where reducing components is crucial.
+        </p>
 
-            <h2 class="introduction">6. Applications and Considerations</h2>
+        <h2 class="introduction">6. Applications and Considerations</h2>
 
-            <p><em>6.1 Automotive Drivetrains : </em>Various BLDC control techniques find applications in electric
-                vehicle drivetrains, emphasizing efficiency and regenerative braking capabilities. The choice of control
-                technique depends on the specific requirements of the vehicle.</p>
+        <p>
+          <em>6.1 Automotive Drivetrains : </em>Various BLDC control techniques
+          find applications in electric vehicle drivetrains, emphasizing
+          efficiency and regenerative braking capabilities. The choice of
+          control technique depends on the specific requirements of the vehicle.
+        </p>
 
-            <p class="second_section_para"><em>6.2 Industrial Automation : </em>BLDC motors play a vital role in
-                robotics and industrial automation. Different control techniques cater to specific performance
-                requirements, ensuring optimal operation in diverse industrial applications.</p>
+        <p class="second_section_para">
+          <em>6.2 Industrial Automation : </em>BLDC motors play a vital role in
+          robotics and industrial automation. Different control techniques cater
+          to specific performance requirements, ensuring optimal operation in
+          diverse industrial applications.
+        </p>
 
-            <h2 class="introduction">Conclusion : </h2>
+        <h2 class="introduction">Conclusion :</h2>
 
-            <p>As technology advances, the repertoire of BLDC motor control techniques continues to expand, offering
-                engineers a spectrum of options to tailor motor performance to diverse applications. From the simplicity
-                of trapezoidal commutation to the precision of FOC, understanding and selecting the right control
-                technique is paramount for unlocking the full potential of BLDC motors in the modern era.</p>
-            <div>
-                <img src="./assets/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg" alt="" width="100%">
-            </div>
+        <p>
+          As technology advances, the repertoire of BLDC motor control
+          techniques continues to expand, offering engineers a spectrum of
+          options to tailor motor performance to diverse applications. From the
+          simplicity of trapezoidal commutation to the precision of FOC,
+          understanding and selecting the right control technique is paramount
+          for unlocking the full potential of BLDC motors in the modern era.
+        </p>
+        <div>
+          <img
+            src="./assets/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg"
+            alt=""
+            width="100%"
+          />
         </div>
+      </div>
     </section>
     <footer>
-        <section class=" __footer" data-aos="fade-up">
-            <p>
-                Peps Tech is the best and unavoidable choice for IT Software Training,
-                Research & Development, and Student Projects. Our core curriculum and
-                study materials are consistently unique in the field. The trainers
-                have experienced MNC professionals who follow a corporate style of
-                training that focuses on practical sessions.
-            </p>
-            <div class="services">
-                <ul>
-                    <li>
-                        <h5>Services</h5>
-                    </li>
-                    <li>R & D Projects</li>
-                    <li>Software Trainings</li>
-                    <li>Final Year Projects</li>
-                    <li>Mini Project</li>
-                    <li>Resume Building</li>
-                    <li>Internship</li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <ul>
-                    <li>
-                        <h5>Contacts</h5>
-                    </li>
-                    <li>peps-tech@outlook.com</li>
-                    <li>+91-9944002795</li>
-                </ul>
-            </div>
-            <div class="address">
-                <ul>
-                    <li>
-                        <h5>Address</h5>
-                    </li>
-                    <li>HiG 52A 2nd Floor,</li>
-                    <li>7th Cross Santhinikethan,</li>
-                    <li>Old ASTC Hudco</li>
-                    <li>Hosur,TamilNadu</li>
-                    <li>635109.</li>
-                </ul>
-            </div>
-            <section class="social">
-                <a href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/" target="_blank"><i
-                        class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg" target="_blank"><i
-                        class="bi bi-youtube"></i></a>
-                <a href="https://in.linkedin.com/company/peps-tech" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0" target="_blank"><i
-                        class="bi bi-whatsapp"></i></a>
-            </section>
-            <section class="__copyright">
-                <p>
-                    © 2022 - <span id="year"></span> Copyright:
-                    <a class="text-white" href="https://pepstech.com/">pepstech.com</a>
-                </p>
-            </section>
+      <section class="__footer" data-aos="fade-up">
+        <p>
+          Peps Tech is the best and unavoidable choice for IT Software Training,
+          Research & Development, and Student Projects. Our core curriculum and
+          study materials are consistently unique in the field. The trainers
+          have experienced MNC professionals who follow a corporate style of
+          training that focuses on practical sessions.
+        </p>
+        <div class="services">
+          <ul>
+            <li>
+              <h5>Services</h5>
+            </li>
+            <li>R & D Projects</li>
+            <li>Software Trainings</li>
+            <li>Final Year Projects</li>
+            <li>Mini Project</li>
+            <li>Resume Building</li>
+            <li>Internship</li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <ul>
+            <li>
+              <h5>Contacts</h5>
+            </li>
+            <li>peps-tech@outlook.com</li>
+            <li>+91-9944002795</li>
+          </ul>
+        </div>
+        <div class="address">
+          <ul>
+            <li>
+              <h5>Address</h5>
+            </li>
+            <li>HiG 52A 2nd Floor,</li>
+            <li>7th Cross Santhinikethan,</li>
+            <li>Old ASTC Hudco</li>
+            <li>Hosur,TamilNadu</li>
+            <li>635109.</li>
+          </ul>
+        </div>
+        <section class="social">
+          <a
+            href="https://www.facebook.com/people/Peps-tech-Hosur/100083767749120/"
+            target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/peps_tech/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC2oNRV-7dMcYh0_UpBMEPDg"
+            target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="https://in.linkedin.com/company/peps-tech" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/message/FTVRWLGZQIGAJ1?autoload=1&app_absent=0"
+            target="_blank"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
         </section>
+        <section class="__copyright">
+          <p>
+            © 2022 - <span id="year"></span> Copyright:
+            <a class="text-white" href="https://peps-tech.com/"
+              >peps-tech.com</a
+            >
+          </p>
+        </section>
+      </section>
     </footer>
     <button class="scroll-top scroll-to-target" data-target="html">
-        <!-- <i class="bi bi-arrow-up svg-color"></i> -->
-        <i class="bi bi-chevron-up svg-color"></i>
-        <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
+      <!-- <i class="bi bi-arrow-up svg-color"></i> -->
+      <i class="bi bi-chevron-up svg-color"></i>
+      <!-- <img src="assets/arrow-up-solid.svg" alt=""> -->
     </button>
     <script src="scripts.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
